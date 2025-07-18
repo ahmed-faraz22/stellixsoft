@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stellix Soft</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header id="mainHeader">
+        <div class="container">
+            <div class="inner d-flex align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="./home.html" class=" d-flex align-items-center gap-2">
+                        <img src="./assets/images/logo.png" alt="">
+                        <span>StellixSoft</span>
+                    </a>
+                </div>
+                <nav class="desktop-nav">
+                    <ul class="d-flex align-items-center gap-4 m-0 p-0">
+                        <li><a href="./aboutus.html" class="hover-me"><span>About Us</span></a></li>
+                        <li><a href="./services.html" class="hover-me"><span>Services</span></a></li>
+                        <li><a href="#" class="hover-me"><span>Projects</span></a></li>
+                        <li><a href="#" class="hover-me"><span>Pricing</span></a></li>
+                        <li><a href="#" class="hover-me"><span>Blogs</span></a></li>
+                        <li><a href="#" class="hover-me"><span>Jobs</span></a></li>
+                        <div class="cursor"></div>
+                    </ul>
+                </nav>
+
+                <div class="header-cta d-flex align-items-center">
+                    <!-- <div class="search-bar" id="searchBar">
+                        <i class="fa-solid fa-magnifying-glass" type="button" class="btn btn-primary"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                        <input type="text" placeholder="Search">
+                    </div> -->
+                    <!-- Button trigger modal -->
+                    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Launch demo modal
+                    </button> -->
+
+                    <!-- Modal -->
+                    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- Popup for small screens -->
+                    <!-- <div class="search-popup" id="searchPopup">
+                        <input type="text" placeholder="Search...">
+                    </div> -->
+
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass" type="button" class="btn btn-primary"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    </div>
+
+                    <button class="primary-btn">Contact us</button>
+                </div>
+
+                <div class="mobile-nav">
+                    <i class="fa-solid fa-xmark close-icon" onclick="closeMobileNav()"></i>
+                    <nav>
+                        <a href="#" class=" px-3 py-2 rounded-5 ">
+                            About us</a>
+                        <a href="#" class=" px-3 py-2 rounded-5  active ">
+                            Services</a>
+                        <a href="#" class="  px-3 py-2 rounded-5 ">
+                            Projects</a>
+                        <a href="#" class="  px-3 py-2 rounded-5 ">Pricing</a>
+                        <a href="#" class=" px-3 py-2 rounded-5 ">
+                            Blogs</a>
+                        <a href="#" class=" px-3 py-2 rounded-5 ">
+                            Jobs</a>
+
+                        <div class="search-bar">
+                            <a href="#" class=" px-3 py-2 rounded-5 ">
+                                Contact us</a>
+                            <i class="fa-solid fa-magnifying-glass" type="button" class="btn btn-primary"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                        </div>
+                    </nav>
+
+                </div>
+                <button class="hamburger-btn" onclick="openMobileNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- hero-section -->
+    <div class="hero">
+        <div class="container">
+            <div class="inner">
+                <div class="content-wrapper">
+                    <h1 class="mb-4">
+                        Best Software Developers in Eastern Europe:
+                        <span>Top 15 Picks for 2025</span>
+                        <p><span>Home</span> > <span>Blog</span> > Best Software Developers in Eastern Europe: Top 15
+                            Picks for 2025</p>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hero-section-end -->
+
+
+    <!-- project-details -->
+    <section class="blogs-details">
+        <div class="container">
+            <div class="inner">
+                <div class="blogs-category mb-5">
+                    <span>Web Design</span>
+                </div>
+
+                <div class="blogs-about mb-5">
+                    <h2 class="mb-2">The Impact of Technology on the Workplace: How Technology is Changing</h2>
+                    <span class="blog-date d-block mb-4">August 20, 2025</span>
+                    <img class="mb-4" src="./assets/images/blogimg.png" alt="">
+                    <p class="m-0">Eastern Europe has become a hub for top-notch software development companies that
+                        feature two
+                        distinctive features:</p>
+                    <ul class="p-0 m-0">
+                        <li>
+                            <b>high-quality services;</b>
+                        </li>
+                        <li>
+                            <b>competitive rates.</b>
+                        </li>
+                    </ul>
+                    <p>According to the research “IT Outsourcing Trends & Overview” which has been updated every year
+                        since 2019, Eastern Europe is the number one region to hire a development company.
+                        But why? And how to find expert development providers among thousands of companies?
+                        We will examine it in detail in this article as well as guide you on to find the most
+                        suitable = software development partner for your project.</p>
+
+                    <h3 class="mb-4">What Makes the Eastern European Tech Scene Unique?</h3>
+                    <p>These countries share similar characteristics that set them apart from other countries. One of
+                        the most notable is the quality STEM education - the region produces many tech-savvy graduates
+                        every year, and their skills are among the highest on platforms for developers like LeetCode,
+                        HackerNoon, TopCoder, etc. These platforms have published rankings of countries based on
+                        programming skills, and Eastern Europe countries consistently rank high.</p>
+                    <p>Moreover, Eastern European developers are widely recognized for their adaptability,
+                        strong communication skills, and client-oriented service approach. This moves us to the next
+                        point: high proficiency in English. IT teams from Eastern Europe can communicate and write
+                        technical documentation in English without language barriers, thanks to two facts: studying
+                        English is a part of the school and university curriculum, and there are many specialized
+                        language courses tailored to business and IT terminology.</p>
+
+                </div>
+                <div class="blog-qoute text-center mb-5">
+                    <em>“Let’s start with a list of countries for this region that have established themselves as
+                        key players in the IoT outsourcing”</em>
+                </div>
+
+                <div class="stats-table mb-5">
+                    <div class="table-head-bg"></div>
+                    <div class="table-responsive">
+                        <table class="table table-striped ">
+                            <colgroup>
+                                <col style="width: 35%;">
+                                <col style="width: 20%;">
+                                <col style="width: 20%;">
+                                <col style="width: 25%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Programming Skill Rank</th>
+                                    <th scope="col">English Proficiency Rank(Global)</th>
+                                    <th scope="col">Developer Salaries (Annual)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Poland</th>
+                                    <td>Top 3</td>
+                                    <td>13(High)</td>
+                                    <td>$35,000-$55,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ukraine</th>
+                                    <td>Top 10</td>
+                                    <td>30(Modrate)</td>
+                                    <td>$15,000-$30,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Hungary</th>
+                                    <td>Top 10</td>
+                                    <td>30(Modrate)</td>
+                                    <td>$30,000-$45,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Czech Republic</th>
+                                    <td>Top20</td>
+                                    <td>20(High)</td>
+                                    <td>$35,000-$55,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Romania</th>
+                                    <td>Top 15</td>
+                                    <td>17(High)</td>
+                                    <td>$25,000-$40,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Slovakia</th>
+                                    <td>Top 20</td>
+                                    <td>25(Modrate)</td>
+                                    <td>$25,000-$40,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Bulgaria</th>
+                                    <td>Top 30</td>
+                                    <td>40(Basic)</td>
+                                    <td>$20,000-$35,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Estonia</th>
+                                    <td>Top 20-30</td>
+                                    <td>15(High)</td>
+                                    <td>$45,000-$65,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                <div class="ad-wrapper mb-5">
+                    <h3>Advertisement</h3>
+                </div>
+
+                <div class="why-development">
+                    <h3 class="mb-4">Why Refer to Software Development in Eastern Europe</h3>
+                    <p>Eastern Europe has become well known as a hub for outsourcing software development, offering a
+                        blend of talented professionals, cost efficiency and shared cultural values. The region’s appeal
+                        is bolstered by an education system, a focus on innovation and research and a diverse group of
+                        developers skilled in cutting edge technologies.</p>
+                    <p>Countries here offer an excellent balance between quality and cost efficiency. While developers
+                        in Eastern Europe command competitive rates compared to their Western counterparts, the quality
+                        of their work often exceeds expectations.</p>
+                    <p>
+                        The country’s educational system produces a diverse talent pool, making it easy to find
+                        specialists in any programming language and framework. For instance, if you’re looking for a
+                        native mobile developer, there are senior professionals with over 10 years of experience in Java
+                        or Kotlin. Need a machine learning specialist? You’ll find coders proficient in Python,
+                        TensorFlow, PyTorch, and other relevant technologies.</p>
+                    <p>Another advantage is that Eastern Europe refers to the UTC+02:00 time zone, which is 2 hours
+                        ahead of Coordinated Universal Time. For global companies, this means software development
+                        companies can easily adjust their working schedule to reach the necessary number of overlapping
+                        hours.</p>
+                    <p class="m-0">Still, the most valued advantages of this region are:</p>
+                    <ul class="p-0 m-0">
+                        <li>
+                            <p>Lower labor expenses compared to Western nations.</p>
+                        </li>
+                        <li>
+                            <p>High quality of work.</p>
+                        </li>
+                        <li>
+                            <p>Similar to US work ethics and values that enhance communication.</p>
+                        </li>
+                        <li>
+                            <p>English language fluency among developers.</p>
+                        </li>
+                        <li>
+                            <p>A high number of overlapping working hours with Clients in Europe and North America.</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- project-details -->
+
+    <!-- skills -->
+    <section class="faq">
+        <div class="container">
+            <div class="inner">
+                <h2 class="text-center">Frequently Asking Questions</h2>
+                <div class="accordian-wrapper">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Nunc sed blandit libero volutpat sed?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium
+                                    aenean
+                                    pharetra magna ac placerat vestibulum.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Congue mauris rhoncus aenean vel elit?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium
+                                    aenean
+                                    pharetra magna ac placerat vestibulum.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Magna eget est lorem ipsum dolor sit amet?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium
+                                    aenean
+                                    pharetra magna ac placerat vestibulum.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Magna eget est lorem ipsum dolor sit amet?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium
+                                    aenean
+                                    pharetra magna ac placerat vestibulum.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Magna eget est lorem ipsum dolor sit amet?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium
+                                    aenean
+                                    pharetra magna ac placerat vestibulum.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skills-end -->
+
+    <!-- projects -->
+    <section class="successfull-projects">
+        <div class="container">
+            <div class="inner">
+                <h2 class="text-center mb-5">Most Recent Projects</h2>
+
+                <div class="row gy-5">
+                    <div class="col-12 col-lg-4">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/images/Container.png" alt="">
+                            </div>
+                            <div class="project-content">
+                                <h6>SEO & Performance</h6>
+                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                <span>Feb 12, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/images/Container.png" alt="">
+                            </div>
+                            <div class="project-content">
+                                <h6>SEO & Performance</h6>
+                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                <span>Feb 12, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./assets/images/Container.png" alt="">
+                            </div>
+                            <div class="project-content">
+                                <h6>SEO & Performance</h6>
+                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                <span>Feb 12, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <!-- projects -->
+
+    <!-- start-project  -->
+    <section class="start-project">
+        <div class="container">
+            <div class="inner">
+                <h2>Service discount up to 30% for any project</h2>
+                <a href="#" class="secondary-btn">START PROJECT NOW</a>
+            </div>
+        </div>
+    </section>
+    <!-- start-project  -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="inner">
+                <hr>
+                <div class="row g-4">
+                    <div class="col-12 col-lg-3">
+                        <div class="logo mb-3">
+                            <a href="#">
+                                <img src="./assets/images/logo.png" alt="">
+                                <span>StellixSoft</span>
+                            </a>
+                        </div>
+                        <p class="text-white">At Stellix, we craft intelligent, scalable, and high-performance software
+                            solutions tailored to your business needs.</p>
+                        <div class="social-links">
+                            <img src="./assets/images/twitter.svg" alt="">
+                            <img src="./assets/images/linkedin.svg" alt="">
+                            <img src="./assets/images/Whatsapp.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4>PAGES</h4>
+                                <ul>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            About Us </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Projects </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Pricing </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Blogs </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Jobs </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Contact us </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4>ALL SERVICES </h4>
+                                <ul>
+
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Web Development </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Custom Solution </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            SEO </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            PPC </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Website Management </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            UI/UX Design </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <h4>NEWS LETTER</h4>
+                        <div class="news-letter">
+                            <input type="text" placeholder="Enter your email">
+                            <div class="custom-btn">
+                                <button><svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_7068_81)">
+                                            <path
+                                                d="M7.04492 1.8291L7.65195 1.22207C7.90898 0.965039 8.32461 0.965039 8.57891 1.22207L13.8945 6.53496C14.1516 6.79199 14.1516 7.20762 13.8945 7.46191L8.57891 12.7775C8.32188 13.0346 7.90625 13.0346 7.65195 12.7775L7.04492 12.1705C6.78516 11.9107 6.79062 11.4869 7.05586 11.2326L10.3508 8.09355H2.49219C2.12852 8.09355 1.83594 7.80098 1.83594 7.4373V6.5623C1.83594 6.19863 2.12852 5.90605 2.49219 5.90605H10.3508L7.05586 2.76699C6.78789 2.5127 6.78242 2.08887 7.04492 1.8291Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_7068_81">
+                                                <rect width="14" height="14" fill="white"
+                                                    transform="translate(0.960938)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="text-white">Nisl rhoncus mattis rhoncus urna neque viverra. <a
+                                href="#"><b>Unsubscribe</b></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-rigth text-center">
+                <p class="text-white m-0">© Copyright by stellix soft – All right reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+
+    <!-- search popup -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Find what you <span>need</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="d-sm-flex align-items-center">
+                    <div class="modal-body">
+                        <input type="search" placeholder="Search.." class="form-control">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn primary-btn">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search popup -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/gsap.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

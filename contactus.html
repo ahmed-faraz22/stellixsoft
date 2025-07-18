@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stellix Soft</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header id="mainHeader">
+        <div class="container">
+            <div class="inner d-flex align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="./home.html" class=" d-flex align-items-center gap-2">
+                        <img src="./assets/images/logo.png" alt="">
+                        <span>StellixSoft</span>
+                    </a>
+                </div>
+                <nav class="desktop-nav">
+                    <ul class="d-flex align-items-center gap-4 m-0 p-0">
+                        <li><a href="./aboutus.html" class="hover-me"><span>About Us</span></a></li>
+                        <li><a href="./services.html" class="hover-me"><span>Services</span></a></li>
+                        <li><a href="#" class="hover-me"><span>Projects</span></a></li>
+                        <li><a href="#" class="hover-me"><span>Pricing</span></a></li>
+                        <li><a href="#" class="hover-me"><span>Blogs</span></a></li>
+                        <li><a href="#" class="hover-me"><span>Jobs</span></a></li>
+                        <div class="cursor"></div>
+                    </ul>
+                </nav>
+
+                <div class="header-cta d-flex align-items-center">
+                    <!-- <div class="search-bar" id="searchBar">
+                        <i class="fa-solid fa-magnifying-glass" type="button" class="btn btn-primary"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                        <input type="text" placeholder="Search">
+                    </div> -->
+                    <!-- Button trigger modal -->
+                    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Launch demo modal
+                    </button> -->
+
+                    <!-- Modal -->
+                    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- Popup for small screens -->
+                    <!-- <div class="search-popup" id="searchPopup">
+                        <input type="text" placeholder="Search...">
+                    </div> -->
+
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass" type="button" class="btn btn-primary"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    </div>
+
+                    <button class="primary-btn">Contact us</button>
+                </div>
+
+                <div class="mobile-nav">
+                    <i class="fa-solid fa-xmark close-icon" onclick="closeMobileNav()"></i>
+                    <nav>
+                        <a href="#" class=" px-3 py-2 rounded-5 ">
+                            About us</a>
+                        <a href="#" class=" px-3 py-2 rounded-5  active ">
+                            Services</a>
+                        <a href="#" class="  px-3 py-2 rounded-5 ">
+                            Projects</a>
+                        <a href="#" class="  px-3 py-2 rounded-5 ">Pricing</a>
+                        <a href="#" class=" px-3 py-2 rounded-5 ">
+                            Blogs</a>
+                        <a href="#" class=" px-3 py-2 rounded-5 ">
+                            Jobs</a>
+
+                        <div class="search-bar">
+                            <a href="#" class=" px-3 py-2 rounded-5 ">
+                                Contact us</a>
+                            <i class="fa-solid fa-magnifying-glass" type="button" class="btn btn-primary"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                        </div>
+                    </nav>
+
+                </div>
+                <button class="hamburger-btn" onclick="openMobileNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- hero-section -->
+    <div class="hero">
+        <div class="container">
+            <div class="inner">
+                <div class="content-wrapper">
+                    <h1 class="mb-4">
+                        Reach out to
+                        <span>us</span>
+                    </h1>
+                    <p>
+                        Fill out your information and an Asana representative will reach out to you
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hero-section-end -->
+
+    <!-- contact -->
+    <section class="contact">
+        <div class="container">
+            <div class="inner">
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <h2 class="mb-3">Innovate with AI - Let’s Build Something Amazing Together!</h2>
+                        <p>At Stellix, we turn your vision whether you’re a startup or an enterprise, our expert team is
+                            here to bring your project to life with cutting-edge technology and seamless execution.</p>
+                    </div>
+                    <div class="col-md-6 align-content-end">
+                        <div class="contact-wrappper">
+                            <h3 class="mb-3">Sales Enquiries - <span>Pakistan</span></h3>
+                            <a class="d-block" href="tel:+17863487052"> <i class="fa-solid fa-phone me-2"
+                                    style="color: #546BFF;"></i> +1 (786) 348-7052</a>
+                            <a class="d-block" href="mailto:info@stellixsoft.com"><i class="fa-solid fa-envelope me-2"
+                                    style="color: #546bff;"></i> info@stellixsoft.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="title-wrappper d-flex align-items-center justify-content-center">
+                            <h2>Let's <span>grow</span> together</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="content-wrapper">
+                            <div class="description">
+                                <h3>1 What are you looking to work on?</h3>
+                                <p>No matter what your organization's requirements are, we have the capability,
+                                    experience and passion to deliver end-to-end solutions that leverage the latest
+                                    technologies and maximise value.
+                                </p>
+                            </div>
+                            <div class="form-wrapper">
+                                <form action="#" class="contact-form">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" placeholder="Full Name" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="email" class="form-control" placeholder="Email Address"
+                                                required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="select-wrapper d-flex align-items-center">
+                                                <select class="form-control form-select" required>
+                                                    <option value="" disabled selected>Select Services</option>
+                                                    <option value="web">Web Development</option>
+                                                    <option value="design">Graphic Design</option>
+                                                    <option value="seo">SEO Optimization</option>
+                                                    <option value="marketing">Digital Marketing</option>
+                                                </select>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="select-wrapper d-flex align-items-center">
+                                                <select class="form-control form-select" required>
+                                                    <option value="" disabled selected>Budget for this Project</option>
+                                                    <option value="web">Web Development</option>
+                                                    <option value="design">Graphic Design</option>
+                                                    <option value="seo">SEO Optimization</option>
+                                                    <option value="marketing">Digital Marketing</option>
+                                                </select>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <textarea class="form-control" rows="4"
+                                                placeholder="Your Message"></textarea>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <button type="submit" class="btn">Send Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact -->
+
+    <section class="site-location">
+        <div class="inner">
+            <div class="container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6998872.859556253!2d-105.36343225850814!3d31.070287039372985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864070360b823249%3A0x16eb1c8f1808de3c!2sTexas!5e0!3m2!1sen!2sus!4v1751039625281!5m2!1sen!2sus"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- start-project  -->
+    <section class="start-project">
+        <div class="container">
+            <div class="inner">
+                <h2>Service discount up to 30% for any project</h2>
+                <a href="#" class="secondary-btn">START PROJECT NOW</a>
+            </div>
+        </div>
+    </section>
+    <!-- start-project  -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="inner">
+                <hr>
+                <div class="row g-4">
+                    <div class="col-12 col-lg-3">
+                        <div class="logo mb-3">
+                            <a href="#">
+                                <img src="./assets/images/logo.png" alt="">
+                                <span>StellixSoft</span>
+                            </a>
+                        </div>
+                        <p class="text-white">At Stellix, we craft intelligent, scalable, and high-performance software
+                            solutions tailored to your business needs.</p>
+                        <div class="social-links">
+                            <img src="./assets/images/twitter.svg" alt="">
+                            <img src="./assets/images/linkedin.svg" alt="">
+                            <img src="./assets/images/Whatsapp.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4>PAGES</h4>
+                                <ul>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            About Us </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Projects </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Pricing </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Blogs </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Jobs </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Contact us </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4>ALL SERVICES </h4>
+                                <ul>
+
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Web Development </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Custom Solution </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            SEO </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            PPC </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Website Management </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            UI/UX Design </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <h4>NEWS LETTER</h4>
+                        <div class="news-letter">
+                            <input type="text" placeholder="Enter your email">
+                            <div class="custom-btn">
+                                <button><svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_7068_81)">
+                                            <path
+                                                d="M7.04492 1.8291L7.65195 1.22207C7.90898 0.965039 8.32461 0.965039 8.57891 1.22207L13.8945 6.53496C14.1516 6.79199 14.1516 7.20762 13.8945 7.46191L8.57891 12.7775C8.32188 13.0346 7.90625 13.0346 7.65195 12.7775L7.04492 12.1705C6.78516 11.9107 6.79062 11.4869 7.05586 11.2326L10.3508 8.09355H2.49219C2.12852 8.09355 1.83594 7.80098 1.83594 7.4373V6.5623C1.83594 6.19863 2.12852 5.90605 2.49219 5.90605H10.3508L7.05586 2.76699C6.78789 2.5127 6.78242 2.08887 7.04492 1.8291Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_7068_81">
+                                                <rect width="14" height="14" fill="white"
+                                                    transform="translate(0.960938)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="text-white">Nisl rhoncus mattis rhoncus urna neque viverra. <a
+                                href="#"><b>Unsubscribe</b></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-rigth text-center">
+                <p class="text-white m-0">© Copyright by stellix soft – All right reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+
+    <!-- search popup -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Find what you <span>need</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="d-sm-flex align-items-center">
+                    <div class="modal-body">
+                        <input type="search" placeholder="Search.." class="form-control">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn primary-btn">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search popup -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/gsap.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

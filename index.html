@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stellix Soft</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/fancybox.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header id="mainHeader">
+        <div class="container">
+            <div class="inner d-flex align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="./index.html" class=" d-flex align-items-center gap-2">
+                        <img src="./assets/images/logo.png" alt="">
+                        <span>StellixSoft</span>
+                    </a>
+                </div>
+                <div class="nav-wrapper position-relative">
+                    <nav class="desktop-nav">
+                        <ul class="d-flex align-items-center gap-4 m-0 p-0">
+                            <li><a href="./aboutus.html" class="hover-me"><span>About Us</span></a></li>
+                            <li><a href="./services.html" class="hover-me"><span>Services</span></a></li>
+                            <li><a href="./projects.html" class="hover-me"><span>Projects</span></a></li>
+                            <li><a href="./pricing.html" class="hover-me"><span>Pricing</span></a></li>
+                            <li><a href="./blogs.html" class="hover-me"><span>Blogs</span></a></li>
+                            <li><a href="./jobdetails.html" class="hover-me"><span>Jobs</span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="cursor"></div>
+                </div>
+
+
+                <div class="header-cta d-flex align-items-center">
+                    <!-- <div class="search-bar" id="searchBar">
+                        <i class="fa-solid fa-magnifying-glass" type="button" class="btn btn-primary"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                        <input type="text" placeholder="Search">
+                    </div> -->
+                    <!-- Button trigger modal -->
+                    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Launch demo modal
+                    </button> -->
+
+                    <!-- Modal -->
+                    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- Popup for small screens -->
+                    <!-- <div class="search-popup" id="searchPopup">
+                        <input type="text" placeholder="Search...">
+                    </div> -->
+
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass" type="button" class="btn btn-primary"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    </div>
+
+                    <button class="primary-btn">Contact us</button>
+                </div>
+
+                <div class="mobile-nav">
+                    <i class="fa-solid fa-xmark close-icon" onclick="closeMobileNav()"></i>
+                    <nav>
+                        <a href="#" class=" px-3 py-2 rounded-5 ">
+                            About us</a>
+                        <a href="#" class=" px-3 py-2 rounded-5  active ">
+                            Services</a>
+                        <a href="#" class="  px-3 py-2 rounded-5 ">
+                            Projects</a>
+                        <a href="#" class="  px-3 py-2 rounded-5 ">Pricing</a>
+                        <a href="#" class=" px-3 py-2 rounded-5 ">
+                            Blogs</a>
+                        <a href="#" class=" px-3 py-2 rounded-5 ">
+                            Jobs</a>
+
+                        <div class="search-bar">
+                            <a href="#" class=" px-3 py-2 rounded-5 ">
+                                Contact us</a>
+                            <i class="fa-solid fa-magnifying-glass" type="button" class="btn btn-primary"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                        </div>
+                    </nav>
+
+                </div>
+                <button class="hamburger-btn" onclick="openMobileNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- hero-section -->
+    <div class="hero">
+        <canvas id="waveCanvas"></canvas>
+        <div class="container">
+            <div class="inner">
+                <div class="content-wrapper">
+                    <h1 class="typewriter mb-4">
+                        Building the Future with Smart
+                        Software
+                        <span data-text="web developer., designer., photographer."></span>
+                    </h1>
+                    <div class="description">
+                        <p>
+                            At Stellix, we craft intelligent, scalable, and high-performance
+                            software solutions tailored to your business needs
+                        </p>
+                    </div>
+                    <div class="hero-btn mt-5">
+                        <div class="button-wrap">
+                            <a href="#">Explore our services</a>
+                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20.5" cy="20.5" r="20.5" fill="#546BFF" />
+                                <path d="M17.571 12.6905L24.4043 19.5238L17.571 26.3572" stroke="white"
+                                    stroke-width="2" />
+                            </svg>
+                        </div>
+                        <a href="#" class="secondary-btn">Schedule a call</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hero-section-end -->
+
+    <!-- our-services -->
+    <section class="our-services">
+        <div class="container">
+            <div class="inner">
+                <h3 class="top-heading text-center mb-3">SERVICES</h3>
+                <h2 class="text-center mb-5">
+                    We provide All-in-one Solution for every IT job
+                </h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Custom Software Development</h5>
+                                <p class="card-text my-4">
+                                    We develop tailored software solutions that streamline
+                                    operations, enhance productivity, and scale with your
+                                    business.
+                                </p>
+                                <div class="card-btn">
+                                    <a href="#">LEARN MORE</a>
+                                    <svg width="18" height="21" viewBox="0 0 18 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.7913 10.7273L7.23935 16.0714C6.92473 16.4407 6.41598 16.4407 6.1047 16.0714L5.34827 15.1833C5.03365 14.8139 5.03365 14.2167 5.34827 13.8512L8.57482 10.0633L5.34827 6.2753C5.03365 5.90594 5.03365 5.30866 5.34827 4.94323L6.10135 4.04732C6.41598 3.67795 6.92473 3.67795 7.236 4.04732L11.788 9.39134C12.1059 9.7607 12.1059 10.358 11.7913 10.7273Z"
+                                            fill="#29282B" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Custom Software Development</h5>
+                                <p class="card-text my-4">
+                                    We develop tailored software solutions that streamline
+                                    operations, enhance productivity, and scale with your
+                                    business.
+                                </p>
+                                <div class="card-btn">
+                                    <a href="#">LEARN MORE</a>
+                                    <svg width="18" height="21" viewBox="0 0 18 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.7913 10.7273L7.23935 16.0714C6.92473 16.4407 6.41598 16.4407 6.1047 16.0714L5.34827 15.1833C5.03365 14.8139 5.03365 14.2167 5.34827 13.8512L8.57482 10.0633L5.34827 6.2753C5.03365 5.90594 5.03365 5.30866 5.34827 4.94323L6.10135 4.04732C6.41598 3.67795 6.92473 3.67795 7.236 4.04732L11.788 9.39134C12.1059 9.7607 12.1059 10.358 11.7913 10.7273Z"
+                                            fill="#29282B" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Custom Software Development</h5>
+                                <p class="card-text my-4">
+                                    We develop tailored software solutions that streamline
+                                    operations, enhance productivity, and scale with your
+                                    business.
+                                </p>
+                                <div class="card-btn">
+                                    <a href="#">LEARN MORE</a>
+                                    <svg width="18" height="21" viewBox="0 0 18 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.7913 10.7273L7.23935 16.0714C6.92473 16.4407 6.41598 16.4407 6.1047 16.0714L5.34827 15.1833C5.03365 14.8139 5.03365 14.2167 5.34827 13.8512L8.57482 10.0633L5.34827 6.2753C5.03365 5.90594 5.03365 5.30866 5.34827 4.94323L6.10135 4.04732C6.41598 3.67795 6.92473 3.67795 7.236 4.04732L11.788 9.39134C12.1059 9.7607 12.1059 10.358 11.7913 10.7273Z"
+                                            fill="#29282B" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Custom Software Development</h5>
+                                <p class="card-text my-4">
+                                    We develop tailored software solutions that streamline
+                                    operations, enhance productivity, and scale with your
+                                    business.
+                                </p>
+                                <div class="card-btn">
+                                    <a href="#">LEARN MORE</a>
+                                    <svg width="18" height="21" viewBox="0 0 18 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.7913 10.7273L7.23935 16.0714C6.92473 16.4407 6.41598 16.4407 6.1047 16.0714L5.34827 15.1833C5.03365 14.8139 5.03365 14.2167 5.34827 13.8512L8.57482 10.0633L5.34827 6.2753C5.03365 5.90594 5.03365 5.30866 5.34827 4.94323L6.10135 4.04732C6.41598 3.67795 6.92473 3.67795 7.236 4.04732L11.788 9.39134C12.1059 9.7607 12.1059 10.358 11.7913 10.7273Z"
+                                            fill="#29282B" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our-services-end -->
+
+    <!-- banner -->
+    <section class="banner">
+        <div class="container">
+            <div class="inner">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="counter text-center">
+                            <h3 class="count" data-target="782">0</h3>
+                            <p>WORLDWIDE CUSTOMERS</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="counter text-center">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <h3 class="count" data-target="12">0</h3>
+                                <h3>k</h3>
+                            </div>
+                            <p>PROJECTS DONE</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="counter text-center">
+                            <h3 class="count" data-target="5.896">0</h3>
+                            <p>IT PRODUCTS</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="counter text-center">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <h3 class="count" data-target="890">0</h3>
+                                <h3>k</h3>
+                            </div>
+                            <p>PROJECTS SPEND</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner-end -->
+
+    <div class="review-video">
+        <div class="container">
+            <div class="inner">
+                <div class="review-card">
+                    <a data-fancybox data-type="iframe"
+                        href="https://www.youtube.com/embed/xmKdL7kNThA?si=GYIicZw1k6zFVBS9"
+                        class="video-overlay-wrapper">
+                        <video class="img-fluid" autoplay muted loop playsinline controls id="main-video">
+                            <source src="./assets/images/Cars 3 Alan Walker Music Video 4K (Spectre 21' Mix).mp4"
+                                type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </a>
+                    <h3>Happy customer review</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- why-us -->
+    <section class="why-us">
+        <div class="container">
+            <div class="inner">
+                <div class="row g-md-0 g-4">
+                    <div class=" col-lg-6">
+                        <h3 class="top-heading mb-3">WHY US</h3>
+                        <h2 class="mb-3">We have over 4+ years in the Tech Industry</h2>
+                        <p>
+                            Quis eleifend quam adipiscing vitae proin sagittis nisl. Lectus
+                            vestibulum mattis.
+                        </p>
+                        <div class="frequently-questions mt-5">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            DEDICATED TEAMS
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            Risus viverra adipiscing at in tellus integer feugiat.
+                                            Aenean et tortor at risus viverra.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            CERTIFIED PROFESSIONAL
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            Risus viverra adipiscing at in tellus integer feugiat.
+                                            Aenean et tortor at risus viverra.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            24/7 SUPPORT TEAM
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            Risus viverra adipiscing at in tellus integer feugiat.
+                                            Aenean et tortor at risus viverra.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="why-us-card">
+                                    <img src="./assets/images/pexels.jpg" class="clickable-image" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="why-us-card">
+                                    <img src="./assets/images/pexels.jpg" class="clickable-image" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- why-us-end -->
+
+    <!-- contact-us  -->
+    <section class="contact-us">
+        <div class="container">
+            <div class="inner">
+                <div class="d-flex flex-column-reverse flex-lg-row gap-4 gap-lg-0">
+                    <div class="col-12 col-lg-6">
+                        <div class="form-wrapper">
+                            <h4>Consultation for Free</h4>
+                            <p>Posuere morbi leo urna molestie at elementum eu egestas.</p>
+                            <form action="">
+                                <input type="text" placeholder="Your name">
+                                <input type="text" placeholder="Phone number">
+                                <input type="text" placeholder="Project category">
+                                <button class="primary-btn">send</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="wrapper">
+                            <div class="description">
+                                <h3 class="top-heading text-white">OUR SUCCESS</h3>
+                                <h2 class="text-white">We have helped more than 700+ clients worldwide</h2>
+                                <p class="text-white">Quis eleifend quam adipiscing vitae proin sagittis nisl. Lectus
+                                    vestibulum mattis.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="rank">
+                                        <div class="skills-area">
+                                            <div class="single-skill">
+                                                <div class="circlechart" data-percentage="90"><svg class="circle-chart"
+                                                        viewBox="0 0 33.83098862 33.83098862"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <circle class="circle-chart__background" cx="16.9" cy="16.9"
+                                                            r="15.9"></circle>
+                                                        <circle class="circle-chart__circle success-stroke"
+                                                            stroke-dasharray="92,100" cx="16.9" cy="16.9" r="15.9">
+                                                        </circle>
+                                                        <g class="circle-chart__info"> <text
+                                                                class="circle-chart__percent" x="17.9"
+                                                                y="15.5"></text><text class="circle-chart__subline"
+                                                                x="16.91549431" y="22">
+                                                            </text> </g>
+                                                    </svg></div>
+                                            </div>
+                                        </div>
+                                        <p class="text-white m-0">Quis eleifend quam adipiscing.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="rank">
+                                        <div class="skills-area">
+                                            <div class="single-skill">
+                                                <div class="circlechart" data-percentage="85"><svg class="circle-chart"
+                                                        viewBox="0 0 33.83098862 33.83098862"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <circle class="circle-chart__background" cx="16.9" cy="16.9"
+                                                            r="15.9"></circle>
+                                                        <circle class="circle-chart__circle success-stroke"
+                                                            stroke-dasharray="92,100" cx="16.9" cy="16.9" r="15.9">
+                                                        </circle>
+                                                        <g class="circle-chart__info"> <text
+                                                                class="circle-chart__percent" x="17.9"
+                                                                y="15.5"></text><text class="circle-chart__subline"
+                                                                x="16.91549431" y="22">
+                                                            </text> </g>
+                                                    </svg></div>
+                                            </div>
+                                        </div>
+                                        <p class="text-white m-0">Quis eleifend quam adipiscing.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="rank pt-4">
+                                        <div class="skills-area">
+                                            <div class="single-skill">
+                                                <div class="circlechart" data-percentage="75"><svg class="circle-chart"
+                                                        viewBox="0 0 33.83098862 33.83098862"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <circle class="circle-chart__background" cx="16.9" cy="16.9"
+                                                            r="15.9"></circle>
+                                                        <circle class="circle-chart__circle success-stroke"
+                                                            stroke-dasharray="92,100" cx="16.9" cy="16.9" r="15.9">
+                                                        </circle>
+                                                        <g class="circle-chart__info"> <text
+                                                                class="circle-chart__percent" x="17.9"
+                                                                y="15.5"></text><text class="circle-chart__subline"
+                                                                x="16.91549431" y="22" fill="#fff">
+                                                            </text> </g>
+                                                    </svg></div>
+                                            </div>
+                                        </div>
+                                        <p class="text-white m-0">Quis eleifend quam adipiscing.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="rank pt-4">
+                                        <div class="skills-area">
+                                            <div class="single-skill">
+                                                <div class="circlechart" data-percentage="90"><svg class="circle-chart"
+                                                        viewBox="0 0 33.83098862 33.83098862"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <circle class="circle-chart__background" cx="16.9" cy="16.9"
+                                                            r="15.9"></circle>
+                                                        <circle class="circle-chart__circle success-stroke"
+                                                            stroke-dasharray="92,100" cx="16.9" cy="16.9" r="15.9">
+                                                        </circle>
+                                                        <g class="circle-chart__info"> <text
+                                                                class="circle-chart__percent" x="17.9"
+                                                                y="15.5"></text><text class="circle-chart__subline"
+                                                                x="16.91549431" y="22">
+                                                            </text> </g>
+                                                    </svg></div>
+                                            </div>
+                                        </div>
+                                        <p class="text-white m-0">Quis eleifend quam adipiscing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact-us-end  -->
+
+    <!-- testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="inner">
+                <h3 class="top-heading text-center">TESTIMONIALS</h3>
+                <h2 class="text-center">Our successful clients</h2>
+
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="review-card text-center">
+                                <div class="card-top">
+                                    <img src="./assets/images/quote-right.png" alt="">
+                                    <p>Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium aenean
+                                        pharetra magna ac placerat vestibulum.</p>
+                                    <div class="review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="profile">
+                                    <img src="./assets/images/pexels.jpg" alt="">
+                                    <h4>ROBERT DOE</h4>
+                                    <p>Businessman</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card text-center">
+                                <div class="card-top">
+                                    <img src="./assets/images/quote-right.png" alt="">
+                                    <p>Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium aenean
+                                        pharetra magna ac placerat vestibulum.</p>
+                                    <div class="review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="profile">
+                                    <img src="./assets/images/pexels.jpg" alt="">
+                                    <h4>ROBERT DOE</h4>
+                                    <p>Businessman</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card text-center">
+                                <div class="card-top">
+                                    <img src="./assets/images/quote-right.png" alt="">
+                                    <p>Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium aenean
+                                        pharetra magna ac placerat vestibulum.</p>
+                                    <div class="review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="profile">
+                                    <img src="./assets/images/pexels.jpg" alt="">
+                                    <h4>ROBERT DOE</h4>
+                                    <p>Businessman</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="review-card text-center">
+                                <div class="card-top">
+                                    <img src="./assets/images/quote-right.png" alt="">
+                                    <p>Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium aenean
+                                        pharetra magna ac placerat vestibulum.</p>
+                                    <div class="review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="profile">
+                                    <img src="./assets/images/pexels.jpg" alt="">
+                                    <h4>ROBERT DOE</h4>
+                                    <p>Businessman</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="review-card text-center">
+                                <div class="card-top">
+                                    <img src="./assets/images/quote-right.png" alt="">
+                                    <p>Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium aenean
+                                        pharetra magna ac placerat vestibulum.</p>
+                                    <div class="review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="profile">
+                                    <img src="./assets/images/pexels.jpg" alt="">
+                                    <h4>ROBERT DOE</h4>
+                                    <p>Businessman</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="review-card text-center">
+                                <div class="card-top">
+                                    <img src="./assets/images/quote-right.png" alt="">
+                                    <p>Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium aenean
+                                        pharetra magna ac placerat vestibulum.</p>
+                                    <div class="review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="profile">
+                                    <img src="./assets/images/pexels.jpg" alt="">
+                                    <h4>ROBERT DOE</h4>
+                                    <p>Businessman</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <!-- testimonials-end -->
+
+    <!-- portfolio -->
+    <section class="portfolio">
+        <div class="container">
+            <div class="inner">
+                <div class="d-flex flex-column-reverse flex-lg-row gap-lg-0 gap-4">
+                    <div class="col-12 col-lg-6">
+                        <div class="row gy-5">
+                            <div class="col-12 col-sm-6">
+                                <img src="./assets/images/Rectangle 26.png" alt="">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <img src="./assets/images/pexels.jpg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <img src="./assets/images/Rectangle 26.png" alt="">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <img src="./assets/images/pexels.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="wrapper">
+                            <h3 class="top-heading">PROJECTS</h3>
+                            <h2>Our amazing project that has been completed</h2>
+                            <p>Turpis cursus in hac habitasse platea dictumst quisque sagittis purus. Ligula ullamcorper
+                                malesuada proin libero nunc consequat.
+
+                                Dignissim sodales ut eu sem integer vitae justo. Tincidunt tortor aliquam nulla facilisi
+                                cras.</p>
+
+                            <button class="secondary-btn">RECENT PROJECTS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio-end -->
+
+    <!-- skills -->
+    <section class="skills">
+        <div class="container">
+            <div class="inner">
+                <div class="row gy-md-0 gy-4">
+                    <div class="col-12 col-md-6">
+                        <div class="wrapper">
+                            <h3 class="top-heading">SKILLS</h3>
+                            <h2>We have experts in their respective fields</h2>
+                            <p>Leo urna molestie at elementum. At consectetur lorem donec massa sapien faucibus et.
+                                iverra
+                                suspendisse potenti nullam ac tortor vitae. fFacilisi etiam dignissim diam quis.</p>
+
+                            <div class="progress-wrapper">
+                                <div class="progres-bar">
+                                    <div class="head">
+                                        <h4>WINDOWS/MAC</h4>
+                                        <span>95%</span>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="percentage"></div>
+                                    </div>
+                                </div>
+                                <div class="progres-bar">
+                                    <div class="head">
+                                        <h4>IOS/ANDROID</h4>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="percentage"></div>
+                                    </div>
+                                </div>
+                                <div class="progres-bar">
+                                    <div class="head">
+                                        <h4>HTML/CSS/JS</h4>
+                                        <span>100%</span>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="percentage"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="accordian-wrapper">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Nunc sed blandit libero volutpat sed?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium
+                                            aenean
+                                            pharetra magna ac placerat vestibulum.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Congue mauris rhoncus aenean vel elit?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium
+                                            aenean
+                                            pharetra magna ac placerat vestibulum.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Magna eget est lorem ipsum dolor sit amet?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium
+                                            aenean
+                                            pharetra magna ac placerat vestibulum.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skills-end -->
+
+    <!-- request -->
+    <section class="request">
+        <div class="container">
+            <div class="inner">
+                <div class="profile-img">
+                    <img src="./assets/images/pexels.jpg" alt="">
+                    <img src="./assets/images/pexels.jpg" alt="">
+                    <img src="./assets/images/pexels.jpg" alt="">
+                </div>
+                <div class="description">
+                    <p>Quis eleifend quam adipiscing vitae proin sagittis nisl. Lectus vestibulum mattis. <a
+                            href="#">Make a
+                            Request<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.25703 6.39863L5.06953 9.58613C4.84922 9.80645 4.49297 9.80645 4.275 9.58613L3.74531 9.05645C3.525 8.83613 3.525 8.47988 3.74531 8.26191L6.00469 6.00254L3.74531 3.74316C3.525 3.52285 3.525 3.1666 3.74531 2.94863L4.27266 2.41426C4.49297 2.19395 4.84922 2.19395 5.06719 2.41426L8.25469 5.60176C8.47734 5.82207 8.47734 6.17832 8.25703 6.39863Z"
+                                    fill="#624DE7" />
+                            </svg>
+                        </a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- request-end -->
+
+    <!-- start-project  -->
+    <section class="start-project">
+        <div class="container">
+            <div class="inner">
+                <h2>Service discount up to 30% for any project</h2>
+                <a href="#" class="secondary-btn">START PROJECT NOW</a>
+            </div>
+        </div>
+    </section>
+    <!-- start-project  -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="inner">
+                <hr>
+                <div class="row g-4">
+                    <div class="col-12 col-lg-3">
+                        <div class="logo mb-3">
+                            <a href="#">
+                                <img src="./assets/images/logo.png" alt="">
+                                <span>StellixSoft</span>
+                            </a>
+                        </div>
+                        <p class="text-white">At Stellix, we craft intelligent, scalable, and high-performance software
+                            solutions tailored to your business needs.</p>
+                        <div class="social-links">
+                            <img src="./assets/images/twitter.svg" alt="">
+                            <img src="./assets/images/linkedin.svg" alt="">
+                            <img src="./assets/images/Whatsapp.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4>PAGES</h4>
+                                <ul>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            About Us </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Projects </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Pricing </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Blogs </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Jobs </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Contact us </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4>ALL SERVICES </h4>
+                                <ul>
+
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Web Development </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Custom Solution </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            SEO </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            PPC </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Website Management </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            UI/UX Design </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <h4>NEWS LETTER</h4>
+                        <div class="news-letter">
+                            <input type="text" placeholder="Enter your email">
+                            <div class="custom-btn">
+                                <button><svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_7068_81)">
+                                            <path
+                                                d="M7.04492 1.8291L7.65195 1.22207C7.90898 0.965039 8.32461 0.965039 8.57891 1.22207L13.8945 6.53496C14.1516 6.79199 14.1516 7.20762 13.8945 7.46191L8.57891 12.7775C8.32188 13.0346 7.90625 13.0346 7.65195 12.7775L7.04492 12.1705C6.78516 11.9107 6.79062 11.4869 7.05586 11.2326L10.3508 8.09355H2.49219C2.12852 8.09355 1.83594 7.80098 1.83594 7.4373V6.5623C1.83594 6.19863 2.12852 5.90605 2.49219 5.90605H10.3508L7.05586 2.76699C6.78789 2.5127 6.78242 2.08887 7.04492 1.8291Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_7068_81">
+                                                <rect width="14" height="14" fill="white"
+                                                    transform="translate(0.960938)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="text-white">Nisl rhoncus mattis rhoncus urna neque viverra. <a
+                                href="#"><b>Unsubscribe</b></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-rigth text-center">
+                <p class="text-white m-0">© Copyright by stellix soft – All right reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+
+    <!-- typing effect -->
+    <Script>
+        var span = document.querySelector(".typewriter span");
+        var textArr = span.getAttribute("data-text").split(", ");
+        var maxTextIndex = textArr.length;
+
+        var sPerChar = 0.15;
+        var sBetweenWord = 1.5;
+        var textIndex = 0;
+
+        typing(textIndex, textArr[textIndex]);
+
+        function typing(textIndex, text) {
+            var charIndex = 0;
+            var maxCharIndex = text.length - 1;
+
+            var typeInterval = setInterval(function () {
+                span.innerHTML += text[charIndex];
+                if (charIndex == maxCharIndex) {
+                    clearInterval(typeInterval);
+                    setTimeout(function () { deleting(textIndex, text) }, sBetweenWord * 1000);
+
+                } else {
+                    charIndex += 1;
+                }
+            }, sPerChar * 1000);
+        }
+
+        function deleting(textIndex, text) {
+            var minCharIndex = 0;
+            var charIndex = text.length - 1;
+
+            var typeInterval = setInterval(function () {
+                span.innerHTML = text.substr(0, charIndex);
+                if (charIndex == minCharIndex) {
+                    clearInterval(typeInterval);
+                    textIndex + 1 == maxTextIndex ? textIndex = 0 : textIndex += 1;
+                    setTimeout(function () { typing(textIndex, textArr[textIndex]) }, sBetweenWord * 1000);
+                } else {
+                    charIndex -= 1;
+                }
+            }, sPerChar * 1000);
+        }
+    </Script>
+    <!-- typing effect -->
+
+
+    <!-- search popup -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Find what you <span>need</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="d-sm-flex align-items-center">
+                    <div class="modal-body">
+                        <input type="search" placeholder="Search.." class="form-control">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn primary-btn">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- search popup -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js"
+        integrity="sha512-+LXqbM6YLduaaxq6kNcjMsQgZQUTdZp7FTaArWYFt1nxyFKlQSMdIF/WQ/VgsReERwRD8w/9H9cahFx25UDd+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/gsap.js"></script>
+    <script src="./assets/js/fancybox.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <script type="module">
+        import * as THREE from 'https://unpkg.com/three@0.160.0/build/three.module.js';
+        import { createNoise3D } from 'https://unpkg.com/simplex-noise@4.0.1/dist/esm/simplex-noise.js';
+
+        // --- GLOBAL VARIABLES & CONSTANTS ---
+        let camera, scene, renderer;
+        let topLeftTerrain, bottomRightTerrain;
+        const clock = new THREE.Clock();
+        const noise3DTop = createNoise3D();
+        const noise3DBottom = createNoise3D();
+
+        // --- MOUSE INTERACTION SETUP ---
+        const raycaster = new THREE.Raycaster();
+        const mouse = new THREE.Vector2();
+        let intersectedPoint = null;
+
+        // --- CONSTANTS FROM STATIC GRID FILE ---
+        const LINE_COLOR = 0x2D3853;
+        const WIDTH = 46, HEIGHT = 25, DEPTH = 25;
+
+        // --- HELPER FUNCTION FROM STATIC GRID FILE ---
+        function createLineGrid({ width, height, cols, rows, position, rotation }) {
+            const geometry = new THREE.BufferGeometry();
+            const vertices = [];
+            const dx = width / cols;
+            const dy = height / rows;
+            const x0 = -width / 2;
+            const y0 = -height / 2;
+
+            for (let i = 0; i <= cols; i++) {
+                const x = x0 + i * dx;
+                vertices.push(x, y0, 0, x, y0 + height, 0);
+            }
+            for (let j = 0; j <= rows; j++) {
+                const y = y0 + j * dy;
+                vertices.push(x0, y, 0, x0 + width, y, 0);
+            }
+
+            geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
+            const material = new THREE.LineBasicMaterial({ color: LINE_COLOR, transparent: true, opacity: 0.2 });
+            const lines = new THREE.LineSegments(geometry, material);
+
+            lines.position.set(...position);
+            lines.rotation.set(...rotation);
+            scene.add(lines);
+        }
+
+        // --- CORE SETUP ---
+        function init() {
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0x081426);
+
+            // Using the camera settings from your interactive file
+            camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.2, 1000);
+            camera.position.set(0, 0, 0);
+            camera.lookAt(0, 0, 0);
+
+            renderer = new THREE.WebGLRenderer({ antialias: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.querySelector('.hero').appendChild(renderer.domElement);
+
+            // --- MERGED PART: BUILD THE STATIC GRID ROOM ---
+            createLineGrid({ width: WIDTH, height: HEIGHT, cols: 23, rows: 21, position: [0, 0, -DEPTH], rotation: [0, 0, 0] });
+            createLineGrid({ width: WIDTH, height: DEPTH, cols: 23, rows: 21, position: [0, -HEIGHT / 2, -DEPTH / 2], rotation: [Math.PI / 2, 0, 0] });
+            createLineGrid({ width: WIDTH, height: DEPTH, cols: 23, rows: 21, position: [0, HEIGHT / 2, -DEPTH / 2], rotation: [-Math.PI / 2, 0, 0] });
+            createLineGrid({ width: HEIGHT - 12.5, height: DEPTH - 6.3, cols: 43, rows: 21, position: [-WIDTH / 2.67, 0, -DEPTH / 2], rotation: [0, Math.PI / 2, 0] });
+            createLineGrid({ width: HEIGHT - 12.5, height: DEPTH - 6.3, cols: 43, rows: 21, position: [WIDTH / 2.67, 0, -DEPTH / 2], rotation: [0, -Math.PI / 2, 0] });
+
+            // --- YOUR EXISTING DYNAMIC TERRAIN OBJECTS ---
+            topLeftTerrain = createTerrainMesh(28, 25, 'top');
+            topLeftTerrain.rotation.x = 45 * Math.PI / 2;
+            topLeftTerrain.rotation.y = 20 * Math.PI / 180;
+            topLeftTerrain.rotation.z = -Math.PI / 180;
+            topLeftTerrain.position.set(-10, 5, 2);
+            scene.add(topLeftTerrain);
+
+            bottomRightTerrain = createTerrainMesh(28, 25, 'bottom');
+            bottomRightTerrain.rotation.x = 45 * Math.PI / 2;
+            bottomRightTerrain.rotation.y = 20 * Math.PI / 180;
+            bottomRightTerrain.rotation.z = Math.PI / 180;
+            bottomRightTerrain.position.set(10, -5, 0);
+            scene.add(bottomRightTerrain);
+
+            window.addEventListener('resize', onWindowResize);
+            window.addEventListener('mousemove', onMouseMove);
+        }
+
+        function createTerrainMesh(size, segments, type) {
+            const geometry = new THREE.PlaneGeometry(size, size, segments, segments);
+
+            // const MESH_LINE_COLOR = 0x384668;
+            // const MESH_LINE_COLOR = 0x587291;
+            const MESH_LINE_COLOR = 0x223c5b;
+            // const MESH_LINE_COLOR = 0x315582;
+
+            const wireframeMaterial = new THREE.MeshBasicMaterial({
+                color: MESH_LINE_COLOR, // Using the consistent line color
+                wireframe: true,
+                transparent: true,
+                opacity: 0.4
+            });
+            const mesh = new THREE.Mesh(geometry, wireframeMaterial);
+
+            const pointsMaterial = new THREE.PointsMaterial({
+                color: 0x88aaff,
+                size: 0.07
+            });
+            const points = new THREE.Points(geometry, pointsMaterial);
+
+            const group = new THREE.Group();
+            group.add(mesh);
+            group.add(points);
+
+            group.userData = {
+                geometry: geometry, type: type, isHovered: false,
+                localTime: Math.random() * 1000,
+                noiseFn: type === 'top' ? noise3DTop : noise3DBottom,
+                noiseParams: { frequency: 0.15, amplitude: 2.5, speed: 0.1, octaves: 3 },
+                mouseEffect: { radius: 3, strength: 1.5 }
+            };
+
+            return group;
+        }
+
+        function updateTerrainMesh(meshGroup, deltaTime) {
+            const { geometry, noiseFn, noiseParams, mouseEffect, isHovered } = meshGroup.userData;
+
+            if (!isHovered) {
+                meshGroup.userData.localTime += deltaTime * noiseParams.speed;
+            }
+
+            const time = meshGroup.userData.localTime;
+            const positionAttribute = geometry.getAttribute('position');
+            const localIntersectedPoint = intersectedPoint ? meshGroup.worldToLocal(intersectedPoint.clone()) : null;
+
+            for (let i = 0; i < positionAttribute.count; i++) {
+                let x = positionAttribute.getX(i);
+                let y = positionAttribute.getY(i);
+                let elevation = 0;
+                let amp = noiseParams.amplitude, freq = noiseParams.frequency;
+                for (let j = 0; j < noiseParams.octaves; j++) {
+                    elevation += noiseFn(x * freq, y * freq, time) * amp;
+                    freq *= 2; amp *= 0.5;
+                }
+
+                if (isHovered && localIntersectedPoint) {
+                    const dist = new THREE.Vector2(x, y).distanceTo(localIntersectedPoint);
+                    if (dist < mouseEffect.radius) {
+                        elevation -= (Math.cos(dist / mouseEffect.radius * Math.PI) + 1) / 2 * mouseEffect.strength;
+                    }
+                }
+                positionAttribute.setZ(i, elevation);
+            }
+            positionAttribute.needsUpdate = true;
+        }
+
+        function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+
+        function onMouseMove(event) {
+            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+            mouse.y = - (event.clientY / window.innerHeight) * 2 + 1;
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            const deltaTime = clock.getDelta();
+
+            raycaster.setFromCamera(mouse, camera);
+            const intersects = raycaster.intersectObjects([topLeftTerrain, bottomRightTerrain], true);
+
+            topLeftTerrain.userData.isHovered = false;
+            bottomRightTerrain.userData.isHovered = false;
+            intersectedPoint = null;
+
+            if (intersects.length > 0) {
+                intersectedPoint = intersects[0].point;
+                intersects[0].object.parent.userData.isHovered = true;
+            }
+
+            updateTerrainMesh(topLeftTerrain, deltaTime);
+            updateTerrainMesh(bottomRightTerrain, deltaTime);
+
+            renderer.render(scene, camera);
+        }
+
+        // --- RUN ---
+        init();
+        animate();
+    </script>
+</body>
+
+</html>

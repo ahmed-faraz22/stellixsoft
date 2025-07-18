@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stellix Soft</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header id="mainHeader">
+        <div class="container">
+            <div class="inner d-flex align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="./home.html" class=" d-flex align-items-center gap-2">
+                        <img src="./assets/images/logo.png" alt="">
+                        <span>StellixSoft</span>
+                    </a>
+                </div>
+                <div class="nav-wrapper position-relative">
+                    <nav class="desktop-nav">
+                        <ul class="d-flex align-items-center gap-4 m-0 p-0">
+                            <li><a href="./aboutus.html" class="hover-me"><span>About Us</span></a></li>
+                            <li><a href="./services.html" class="hover-me"><span>Services</span></a></li>
+                            <li><a href="./projects.html" class="hover-me"><span>Projects</span></a></li>
+                            <li><a href="./pricing.html" class="hover-me"><span>Pricing</span></a></li>
+                            <li><a href="./blogs.html" class="hover-me"><span>Blogs</span></a></li>
+                            <li><a href="./jobdetails.html" class="hover-me"><span>Jobs</span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="cursor"></div>
+                </div>
+
+
+                <div class="header-cta d-flex align-items-center">
+                    <!-- <div class="search-bar" id="searchBar">
+                            <i class="fa-solid fa-magnifying-glass" type="button" class="btn btn-primary"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                            <input type="text" placeholder="Search">
+                        </div> -->
+                    <!-- Button trigger modal -->
+                    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Launch demo modal
+                        </button> -->
+
+                    <!-- Modal -->
+                    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    <!-- Popup for small screens -->
+                    <!-- <div class="search-popup" id="searchPopup">
+                            <input type="text" placeholder="Search...">
+                        </div> -->
+
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass" type="button" class="btn btn-primary"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    </div>
+
+                    <button class="primary-btn">Contact us</button>
+                </div>
+
+                <div class="mobile-nav">
+                    <i class="fa-solid fa-xmark close-icon" onclick="closeMobileNav()"></i>
+                    <nav>
+                        <a href="#" class=" px-3 py-2 rounded-5 ">
+                            About us</a>
+                        <a href="#" class=" px-3 py-2 rounded-5  active ">
+                            Services</a>
+                        <a href="#" class="  px-3 py-2 rounded-5 ">
+                            Projects</a>
+                        <a href="#" class="  px-3 py-2 rounded-5 ">Pricing</a>
+                        <a href="#" class=" px-3 py-2 rounded-5 ">
+                            Blogs</a>
+                        <a href="#" class=" px-3 py-2 rounded-5 ">
+                            Jobs</a>
+
+                        <div class="search-bar">
+                            <a href="#" class=" px-3 py-2 rounded-5 ">
+                                Contact us</a>
+                            <i class="fa-solid fa-magnifying-glass" type="button" class="btn btn-primary"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                        </div>
+                    </nav>
+
+                </div>
+                <button class="hamburger-btn" onclick="openMobileNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- hero-section -->
+    <div class="hero">
+        <div class="container">
+            <div class="inner">
+                <div class="content-wrapper">
+                    <h1 class="mb-4">
+                        Flexible, risk-free
+                        <span>pricing</span>
+                    </h1>
+                    <p>
+                        Home > Blog > Best Software Developers in Eastern Europe.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hero-section-end -->
+
+
+    <!-- pricing-services -->
+    <section class="pricing-services">
+        <div class="container">
+            <div class="inner">
+                <h3 class="top-heading text-center mb-3">SERVICES</h3>
+                <h2 class="text-center mb-5">
+                    Specify which services you're interested in.
+                </h2>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="description">
+                                    <div class="card-top mb-4">
+                                        <img src="./assets/images/php.svg" alt="">
+                                        <h5 class="card-title">PHP / Laravel</h5>
+                                    </div>
+                                    <p class="card-text">
+                                        Hire top talent to build your website on a framework known for its sophisticated
+                                        styles and an extravaganza of web…
+                                    </p>
+                                </div>
+                                <h4 class="price"> Price: <span>$30/hr</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="description">
+                                    <div class="card-top mb-4">
+                                        <img src="./assets/images/wp.svg" alt="">
+                                        <h5 class="card-title">WordPress Custom</h5>
+                                    </div>
+                                    <p class="card-text">
+                                        Infuse your website with numerous new features that bring your brand’s vision to
+                                        your users' screens. Your website will be…
+                                    </p>
+                                </div>
+                                <h4 class="price"> Price: <span>$30/hr</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="description">
+                                    <div class="card-top mb-4">
+                                        <img src="./assets/images/front.svg" alt="">
+                                        <h5 class="card-title">Front-End Core</h5>
+                                    </div>
+                                    <p class="card-text">
+                                        It converts mock-up designs into visually pleasing web interfaces. These
+                                        user-friendly, up-to-date web applications are compatible with all…
+                                    </p>
+                                </div>
+                                <h4 class="price"> Price: <span>$30/hr</span></h4>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="description">
+                                    <div class="card-top mb-4">
+                                        <img src="./assets/images/Maintenance.svg" alt="">
+                                        <h5 class="card-title">Web Maintenance</h5>
+                                    </div>
+                                    <p class="card-text">
+                                        Protect your website from all threats. Our keen-eyed professionals specialize in
+                                        keeping all operations in check. They will ensure your…
+                                    </p>
+                                </div>
+                                <h4 class="price"> Price: <span>$30/hr</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="description">
+                                    <div class="card-top mb-4">
+                                        <img src="./assets/images/shopify.svg" alt="">
+                                        <h5 class="card-title">Shopify</h5>
+                                    </div>
+                                    <p class="card-text">
+                                        Hire top talent to build your website on a framework known for its sophisticated
+                                        styles and an extravaganza of web…
+                                    </p>
+                                </div>
+                                <h4 class="price"> Price: <span>$30/hr</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="description">
+                                    <div class="card-top mb-4">
+                                        <img src="./assets/images/wptemp.png" alt="">
+                                        <h5 class="card-title">WordPress Template Base</h5>
+                                    </div>
+                                    <p class="card-text">
+                                        Hire top talent to build your website on a framework known for its sophisticated
+                                        styles and an extravaganza of web…
+                                    </p>
+                                </div>
+                                <h4 class="price"> Price: <span>$30/hr</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="description">
+                                    <div class="card-top mb-4">
+                                        <img src="./assets/images//ppc.svg" alt="">
+                                        <h5 class="card-title">PPC Management</h5>
+                                    </div>
+                                    <p class="card-text">
+                                        Hire top talent to build your website on a framework known for its sophisticated
+                                        styles and an extravaganza of web…
+                                    </p>
+                                </div>
+                                <h4 class="price"> Price: <span>$30/hr</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="description">
+                                    <div class="card-top mb-4">
+                                        <img src="./assets/images//seo.svg" alt="">
+                                        <h5 class="card-title">SEO Of Pricing Plan</h5>
+                                    </div>
+                                    <p class="card-text">
+                                        Hire top talent to build your website on a framework known for its sophisticated
+                                        styles and an extravaganza of web…
+                                    </p>
+                                </div>
+                                <h4 class="price"> Price: <span>$30/hr</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="description">
+                                    <div class="card-top mb-4">
+                                        <img src="./assets/images/net.svg" alt="">
+                                        <h5 class="card-title">PHP / Laravel</h5>
+                                    </div>
+                                    <p class="card-text">
+                                        Hire top talent to build your website on a framework known for its sophisticated
+                                        styles and an extravaganza of web…
+                                    </p>
+                                </div>
+                                <h4 class="price"> Price: <span>$30/hr</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="description">
+                                    <div class="card-top mb-4">
+                                        <img src="./assets/images/nocode.svg" alt="">
+                                        <h5 class="card-title">.NET</h5>
+                                    </div>
+                                    <p class="card-text">
+                                        Hire top talent to build your website on a framework known for its sophisticated
+                                        styles and an extravaganza of web…
+                                    </p>
+                                </div>
+                                <h4 class="price"> Price: <span>$30/hr</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="description">
+                                    <div class="card-top mb-4">
+                                        <img src="./assets/images/mern.svg" alt="">
+                                        <h5 class="card-title">No Code Platform</h5>
+                                    </div>
+                                    <p class="card-text">
+                                        Hire top talent to build your website on a framework known for its sophisticated
+                                        styles and an extravaganza of web…
+                                    </p>
+                                </div>
+                                <h4 class="price"> Price: <span>$30/hr</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="description">
+                                    <div class="card-top mb-4">
+                                        <img src="./assets/images//angular.svg" alt="">
+                                        <h5 class="card-title">MEAN/MERN</h5>
+                                    </div>
+                                    <p class="card-text">
+                                        Hire top talent to build your website on a framework known for its sophisticated
+                                        styles and an extravaganza of web…
+                                    </p>
+                                </div>
+                                <h4 class="price"> Price: <span>$30/hr</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="description">
+                                    <div class="card-top mb-4">
+                                        <img src="./assets/images//react.svg" alt="">
+                                        <h5 class="card-title">Angular Developer</h5>
+                                    </div>
+                                    <p class="card-text">
+                                        Hire top talent to build your website on a framework known for its sophisticated
+                                        styles and an extravaganza of web…
+                                    </p>
+                                </div>
+                                <h4 class="price"> Price: <span>$30/hr</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our-services-end -->
+
+    <!-- contact-us  -->
+    <!-- <section class="contact-us">
+        <div class="container">
+            <div class="inner">
+                <div class="d-flex flex-column-reverse flex-lg-row gap-4 gap-lg-0">
+                    <div class="col-12 col-lg-6">
+                        <div class="form-wrapper">
+                            <h4>Consultation for Free</h4>
+                            <p>Posuere morbi leo urna molestie at elementum eu egestas.</p>
+                            <form action="">
+                                <input type="text" placeholder="Your name">
+                                <input type="text" placeholder="Phone number">
+                                <input type="text" placeholder="Project category">
+                                <button class="primary-btn">send</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="wrapper">
+                            <div class="description">
+                                <h3 class="top-heading text-white">OUR SUCCESS</h3>
+                                <h2 class="text-white">We have helped more than 700+ clients worldwide</h2>
+                                <p class="text-white">Quis eleifend quam adipiscing vitae proin sagittis nisl. Lectus
+                                    vestibulum mattis.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="rank">
+                                        <div class="skills-area">
+                                            <div class="single-skill">
+                                                <div class="circlechart" data-percentage="90"><svg class="circle-chart"
+                                                        viewBox="0 0 33.83098862 33.83098862"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <circle class="circle-chart__background" cx="16.9" cy="16.9"
+                                                            r="15.9"></circle>
+                                                        <circle class="circle-chart__circle success-stroke"
+                                                            stroke-dasharray="92,100" cx="16.9" cy="16.9" r="15.9">
+                                                        </circle>
+                                                        <g class="circle-chart__info"> <text
+                                                                class="circle-chart__percent" x="17.9"
+                                                                y="15.5"></text><text class="circle-chart__subline"
+                                                                x="16.91549431" y="22">
+                                                            </text> </g>
+                                                    </svg></div>
+                                            </div>
+                                        </div>
+                                        <p class="text-white m-0">Quis eleifend quam adipiscing.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="rank">
+                                        <div class="skills-area">
+                                            <div class="single-skill">
+                                                <div class="circlechart" data-percentage="85"><svg class="circle-chart"
+                                                        viewBox="0 0 33.83098862 33.83098862"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <circle class="circle-chart__background" cx="16.9" cy="16.9"
+                                                            r="15.9"></circle>
+                                                        <circle class="circle-chart__circle success-stroke"
+                                                            stroke-dasharray="92,100" cx="16.9" cy="16.9" r="15.9">
+                                                        </circle>
+                                                        <g class="circle-chart__info"> <text
+                                                                class="circle-chart__percent" x="17.9"
+                                                                y="15.5"></text><text class="circle-chart__subline"
+                                                                x="16.91549431" y="22">
+                                                            </text> </g>
+                                                    </svg></div>
+                                            </div>
+                                        </div>
+                                        <p class="text-white m-0">Quis eleifend quam adipiscing.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="rank pt-4">
+                                        <div class="skills-area">
+                                            <div class="single-skill">
+                                                <div class="circlechart" data-percentage="75"><svg class="circle-chart"
+                                                        viewBox="0 0 33.83098862 33.83098862"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <circle class="circle-chart__background" cx="16.9" cy="16.9"
+                                                            r="15.9"></circle>
+                                                        <circle class="circle-chart__circle success-stroke"
+                                                            stroke-dasharray="92,100" cx="16.9" cy="16.9" r="15.9">
+                                                        </circle>
+                                                        <g class="circle-chart__info"> <text
+                                                                class="circle-chart__percent" x="17.9"
+                                                                y="15.5"></text><text class="circle-chart__subline"
+                                                                x="16.91549431" y="22" fill="#fff">
+                                                            </text> </g>
+                                                    </svg></div>
+                                            </div>
+                                        </div>
+                                        <p class="text-white m-0">Quis eleifend quam adipiscing.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="rank pt-4">
+                                        <div class="skills-area">
+                                            <div class="single-skill">
+                                                <div class="circlechart" data-percentage="90"><svg class="circle-chart"
+                                                        viewBox="0 0 33.83098862 33.83098862"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <circle class="circle-chart__background" cx="16.9" cy="16.9"
+                                                            r="15.9"></circle>
+                                                        <circle class="circle-chart__circle success-stroke"
+                                                            stroke-dasharray="92,100" cx="16.9" cy="16.9" r="15.9">
+                                                        </circle>
+                                                        <g class="circle-chart__info"> <text
+                                                                class="circle-chart__percent" x="17.9"
+                                                                y="15.5"></text><text class="circle-chart__subline"
+                                                                x="16.91549431" y="22">
+                                                            </text> </g>
+                                                    </svg></div>
+                                            </div>
+                                        </div>
+                                        <p class="text-white m-0">Quis eleifend quam adipiscing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- contact-us-end  -->
+
+
+    <!-- testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="inner">
+                <h3 class="top-heading text-center">TESTIMONIALS</h3>
+                <h2 class="text-center">Our successful clients</h2>
+
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="review-card text-center">
+                                <div class="card-top">
+                                    <img src="./assets/images/quote-right.png" alt="">
+                                    <p>Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium aenean
+                                        pharetra magna ac placerat vestibulum.</p>
+                                    <div class="review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="profile">
+                                    <img src="./assets/images/pexels.jpg" alt="">
+                                    <h4>ROBERT DOE</h4>
+                                    <p>Businessman</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card text-center">
+                                <div class="card-top">
+                                    <img src="./assets/images/quote-right.png" alt="">
+                                    <p>Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium aenean
+                                        pharetra magna ac placerat vestibulum.</p>
+                                    <div class="review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="profile">
+                                    <img src="./assets/images/pexels.jpg" alt="">
+                                    <h4>ROBERT DOE</h4>
+                                    <p>Businessman</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card text-center">
+                                <div class="card-top">
+                                    <img src="./assets/images/quote-right.png" alt="">
+                                    <p>Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium aenean
+                                        pharetra magna ac placerat vestibulum.</p>
+                                    <div class="review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="profile">
+                                    <img src="./assets/images/pexels.jpg" alt="">
+                                    <h4>ROBERT DOE</h4>
+                                    <p>Businessman</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="review-card text-center">
+                                <div class="card-top">
+                                    <img src="./assets/images/quote-right.png" alt="">
+                                    <p>Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium aenean
+                                        pharetra magna ac placerat vestibulum.</p>
+                                    <div class="review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="profile">
+                                    <img src="./assets/images/pexels.jpg" alt="">
+                                    <h4>ROBERT DOE</h4>
+                                    <p>Businessman</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="review-card text-center">
+                                <div class="card-top">
+                                    <img src="./assets/images/quote-right.png" alt="">
+                                    <p>Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium aenean
+                                        pharetra magna ac placerat vestibulum.</p>
+                                    <div class="review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="profile">
+                                    <img src="./assets/images/pexels.jpg" alt="">
+                                    <h4>ROBERT DOE</h4>
+                                    <p>Businessman</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="review-card text-center">
+                                <div class="card-top">
+                                    <img src="./assets/images/quote-right.png" alt="">
+                                    <p>Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium aenean
+                                        pharetra magna ac placerat vestibulum.</p>
+                                    <div class="review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="profile">
+                                    <img src="./assets/images/pexels.jpg" alt="">
+                                    <h4>ROBERT DOE</h4>
+                                    <p>Businessman</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <!-- testimonials-end -->
+
+
+    <!-- faq -->
+    <section class="faq">
+        <div class="container">
+            <div class="inner">
+                <h2 class="text-center">Frequently Asking Questions</h2>
+                <div class="accordian-wrapper">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Nunc sed blandit libero volutpat sed?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium
+                                    aenean
+                                    pharetra magna ac placerat vestibulum.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Congue mauris rhoncus aenean vel elit?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium
+                                    aenean
+                                    pharetra magna ac placerat vestibulum.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Magna eget est lorem ipsum dolor sit amet?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium
+                                    aenean
+                                    pharetra magna ac placerat vestibulum.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Magna eget est lorem ipsum dolor sit amet?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium
+                                    aenean
+                                    pharetra magna ac placerat vestibulum.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Magna eget est lorem ipsum dolor sit amet?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Nisl rhoncus mattis rhoncus urna neque viverra. Turpis egestas pretium
+                                    aenean
+                                    pharetra magna ac placerat vestibulum.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- faq-end -->
+
+    <!-- start-project  -->
+    <section class="start-project">
+        <div class="container">
+            <div class="inner">
+                <h2>Service discount up to 30% for any project</h2>
+                <a href="#" class="secondary-btn">START PROJECT NOW</a>
+            </div>
+        </div>
+    </section>
+    <!-- start-project  -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="inner">
+                <hr>
+                <div class="row g-4">
+                    <div class="col-12 col-lg-3">
+                        <div class="logo mb-3">
+                            <a href="#">
+                                <img src="./assets/images/logo.png" alt="">
+                                <span>StellixSoft</span>
+                            </a>
+                        </div>
+                        <p class="text-white">At Stellix, we craft intelligent, scalable, and high-performance software
+                            solutions tailored to your business needs.</p>
+                        <div class="social-links">
+                            <img src="./assets/images/twitter.svg" alt="">
+                            <img src="./assets/images/linkedin.svg" alt="">
+                            <img src="./assets/images/Whatsapp.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4>PAGES</h4>
+                                <ul>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            About Us </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Projects </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Pricing </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Blogs </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Jobs </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Contact us </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4>ALL SERVICES </h4>
+                                <ul>
+
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Web Development </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Custom Solution </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            SEO </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            PPC </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            Website Management </a>
+                                    </li>
+                                    <li><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5882 7.46475L6.50079 11.1835C6.21827 11.4405 5.76145 11.4405 5.48194 11.1835L4.8027 10.5655C4.52019 10.3085 4.52019 9.89287 4.8027 9.63857L7.69996 7.00264L4.8027 4.3667C4.52019 4.10967 4.52019 3.69404 4.8027 3.43975L5.47893 2.81631C5.76145 2.55928 6.21827 2.55928 6.49778 2.81631L10.5852 6.53506C10.8707 6.79209 10.8707 7.20771 10.5882 7.46475Z"
+                                                fill="white" />
+                                        </svg>
+
+                                        <a href="#">
+                                            UI/UX Design </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <h4>NEWS LETTER</h4>
+                        <div class="news-letter">
+                            <input type="text" placeholder="Enter your email">
+                            <div class="custom-btn">
+                                <button><svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_7068_81)">
+                                            <path
+                                                d="M7.04492 1.8291L7.65195 1.22207C7.90898 0.965039 8.32461 0.965039 8.57891 1.22207L13.8945 6.53496C14.1516 6.79199 14.1516 7.20762 13.8945 7.46191L8.57891 12.7775C8.32188 13.0346 7.90625 13.0346 7.65195 12.7775L7.04492 12.1705C6.78516 11.9107 6.79062 11.4869 7.05586 11.2326L10.3508 8.09355H2.49219C2.12852 8.09355 1.83594 7.80098 1.83594 7.4373V6.5623C1.83594 6.19863 2.12852 5.90605 2.49219 5.90605H10.3508L7.05586 2.76699C6.78789 2.5127 6.78242 2.08887 7.04492 1.8291Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_7068_81">
+                                                <rect width="14" height="14" fill="white"
+                                                    transform="translate(0.960938)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="text-white">Nisl rhoncus mattis rhoncus urna neque viverra. <a
+                                href="#"><b>Unsubscribe</b></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-rigth text-center">
+                <p class="text-white m-0">© Copyright by stellix soft – All right reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+
+    <!-- search popup -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Find what you <span>need</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="d-sm-flex align-items-center">
+                    <div class="modal-body">
+                        <input type="search" placeholder="Search.." class="form-control">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn primary-btn">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- search popup -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/gsap.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
