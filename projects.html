@@ -32,7 +32,7 @@
                             <li><a href="./aboutus.html" class="hover-me"><span>About Us</span></a></li>
                             <li><a href="./services.html" class="hover-me"><span>Services</span></a></li>
                             <li><a href="./projects.html" class="hover-me"><span>Projects</span></a></li>
-                            <li><a href="#" class="hover-me"><span>Pricing</span></a></li>
+                            <li><a href="./pricing.html" class="hover-me"><span>Pricing</span></a></li>
                             <li><a href="./blogs.html" class="hover-me"><span>Blogs</span></a></li>
                             <li><a href="./jobdetails.html" class="hover-me"><span>Jobs</span></a></li>
                         </ul>
@@ -43,40 +43,40 @@
 
                 <div class="header-cta d-flex align-items-center">
                     <!-- <div class="search-bar" id="searchBar">
-                            <i class="fa-solid fa-magnifying-glass" type="button" class="btn btn-primary"
-                                data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
-                            <input type="text" placeholder="Search">
-                        </div> -->
+                        <i class="fa-solid fa-magnifying-glass" type="button" class="btn btn-primary"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                        <input type="text" placeholder="Search">
+                    </div> -->
                     <!-- Button trigger modal -->
                     <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Launch demo modal
-                        </button> -->
+                        Launch demo modal
+                    </button> -->
 
                     <!-- Modal -->
                     <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
+                    </div> -->
                     <!-- Popup for small screens -->
                     <!-- <div class="search-popup" id="searchPopup">
-                            <input type="text" placeholder="Search...">
-                        </div> -->
+                        <input type="text" placeholder="Search...">
+                    </div> -->
 
                     <div class="search-bar">
                         <i class="fa-solid fa-magnifying-glass" type="button" class="btn btn-primary"
@@ -144,464 +144,1326 @@
         <div class="container">
             <div class="inner">
                 <h2 class="text-center">Projects we successfully developed</h2>
+                <!-- layout shift btns -->
+                <ul class="nav nav-pills mb-3 layout" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-row-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-row" type="button" role="tab" aria-controls="pills-row"
+                            aria-selected="true">
+                            <svg width="42" height="25" viewBox="0 0 42 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="8.61133" width="33.3333" height="5.55556" rx="2.77778" />
+                                <circle cx="3.05561" cy="2.77778" r="2.77778" />
+                                <rect x="8.61133" y="9.72266" width="33.3333" height="5.55556" rx="2.77778" />
+                                <rect x="8.61133" y="19.4443" width="33.3333" height="5.55556" rx="2.77778" />
+                                <circle cx="3.05561" cy="12.5004" r="2.77778" />
+                                <circle cx="3.05561" cy="22.2221" r="2.77778" />
+                            </svg>
 
-                <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
-                            aria-selected="true">All</button>
+                        </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-backend-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-backend" type="button" role="tab" aria-controls="pills-backend"
-                            aria-selected="false">BACK-END</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-seo-tab" data-bs-toggle="pill" data-bs-target="#pills-seo"
-                            type="button" role="tab" aria-controls="pills-seo" aria-selected="false">SEO</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-branding-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-branding" type="button" role="tab" aria-controls="pills-branding"
-                            aria-selected="false">BRANDING</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-webdesign-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-webdesign" type="button" role="tab" aria-controls="pills-webdesign"
-                            aria-selected="false">WEB DESIGN</button>
-                    </li>
+                        <button class="nav-link" id="pills-grid-tab" data-bs-toggle="pill" data-bs-target="#pills-grid"
+                            type="button" role="tab" aria-controls="pills-grid" aria-selected="false">
+                            <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.611328" width="9.72222" height="9.72222" />
+                                <rect x="17.2778" width="9.72222" height="9.72222" />
+                                <rect x="0.611328" y="15.2773" width="9.72222" height="9.72222" />
+                                <rect x="17.2778" y="15.2773" width="9.72222" height="9.72222" />
+                            </svg>
 
+                        </button>
+                    </li>
                 </ul>
+                <!-- layout shift btns -->
+                <!-- layout shift tabs -->
                 <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-row" role="tabpanel"
+                        aria-labelledby="pills-row-tab" tabindex="0">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
+                                    aria-selected="true">All</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-backend-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-backend" type="button" role="tab"
+                                    aria-controls="pills-backend" aria-selected="false">BACK-END</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-seo-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-seo" type="button" role="tab" aria-controls="pills-seo"
+                                    aria-selected="false">SEO</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-branding-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-branding" type="button" role="tab"
+                                    aria-controls="pills-branding" aria-selected="false">BRANDING</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-webdesign-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-webdesign" type="button" role="tab"
+                                    aria-controls="pills-webdesign" aria-selected="false">WEB DESIGN</button>
+                            </li>
 
-                    <div class="tab-pane fade show active" id="pills-all" role="tabpanel"
-                        aria-labelledby="pills-all-tab">
-                        <div class="row gy-5">
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+
+                            <div class="tab-pane fade show active" id="pills-all" role="tabpanel"
+                                aria-labelledby="pills-all-tab">
+                                <div class="row gy-5">
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
+
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
                                     </div>
+
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
+                            <div class="tab-pane fade" id="pills-backend" role="tabpanel"
+                                aria-labelledby="pills-backend-tab">
+                                <div class="row gy-5">
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
+
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
                                     </div>
+
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
+                            <div class="tab-pane fade" id="pills-seo" role="tabpanel" aria-labelledby="pills-seo-tab">
+                                <div class="row gy-5">
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
+
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
                                     </div>
+
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
+                            <div class="tab-pane fade" id="pills-branding" role="tabpanel"
+                                aria-labelledby="pills-branding-tab">
+                                <div class="row gy-5">
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
+
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
                                     </div>
+
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
+                            <div class="tab-pane fade" id="pills-webdesign" role="tabpanel"
+                                aria-labelledby="pills-webdesign-tab">
+                                <div class="row gy-5">
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
+
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
                                     </div>
+
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-4">
+                                        <div class="project-card">
+                                            <div class="project-image">
+                                                <img src="./assets/images/Container.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <h6>SEO & Performance</h6>
+                                                <h3>Optimizing Website Performance for Better SEO</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="pills-backend" role="tabpanel" aria-labelledby="pills-backend-tab">
-                        <div class="row gy-5">
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
+                    <div class="tab-pane fade" id="pills-grid" role="tabpanel" aria-labelledby="pills-grid-tab"
+                        tabindex="0">
+                        <div class="tab-pane fade show active" id="pills-row" role="tabpanel"
+                            aria-labelledby="pills-row-tab" tabindex="0">
+                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-g-all-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-g-all" type="button" role="tab"
+                                        aria-controls="pills-g-all" aria-selected="true">All</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-g-backend-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-g-backend" type="button" role="tab"
+                                        aria-controls="pills-g-backend" aria-selected="false">BACK-END</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-g-seo-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-g-seo" type="button" role="tab"
+                                        aria-controls="pills-g-seo" aria-selected="false">SEO</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-g-branding-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-g-branding" type="button" role="tab"
+                                        aria-controls="pills-g-branding" aria-selected="false">BRANDING</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-g-webdesign-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-g-webdesign" type="button" role="tab"
+                                        aria-controls="pills-g-webdesign" aria-selected="false">WEB DESIGN</button>
+                                </li>
+
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+
+                                <div class="tab-pane fade show active" id="pills-g-all" role="tabpanel"
+                                    aria-labelledby="pills-g-all-tab">
+                                    <div class="grid-wrapper">
+                                        <div class="grid-item">
+                                            <div class="project-img">
+                                                <img src="./assets/images/projectdevice.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <div class="project-logo mb-3">
+                                                    <img src="./assets/images//pazlogo.png" alt="">
+                                                </div>
+                                                <h3>PazMentalRD is a Dominican-based platform</h3>
+                                                <p>Offering medical alert devices, ID bracelets, and emergency
+                                                    monitoring services.
+                                                    We designed and developed their website </p>
+                                                <h6>Tech Stack:</h6>
+                                                <ul class="d-flex flex-wrap">
+                                                    <li>
+                                                        <p>WordPress</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>WooCommerce</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Custom PHP</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Responsive CSS</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>QR Logic</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Multilingual</p>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="btn">
+                                                    <a href="#" class="primary-btn">PROJECT Detail</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="project-img">
+                                                <img src="./assets/images/projectdevice.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <div class="project-logo mb-3">
+                                                    <img src="./assets/images//pazlogo.png" alt="">
+                                                </div>
+                                                <h3>PazMentalRD is a Dominican-based platform</h3>
+                                                <p>Offering medical alert devices, ID bracelets, and emergency
+                                                    monitoring services.
+                                                    We designed and developed their website </p>
+                                                <h6>Tech Stack:</h6>
+                                                <ul class="d-flex flex-wrap">
+                                                    <li>
+                                                        <p>WordPress</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>WooCommerce</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Custom PHP</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Responsive CSS</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>QR Logic</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Multilingual</p>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="btn">
+                                                    <a href="#" class="primary-btn">PROJECT Detail</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="project-img">
+                                                <img src="./assets/images/projectdevice.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <div class="project-logo mb-3">
+                                                    <img src="./assets/images//pazlogo.png" alt="">
+                                                </div>
+                                                <h3>PazMentalRD is a Dominican-based platform</h3>
+                                                <p>Offering medical alert devices, ID bracelets, and emergency
+                                                    monitoring services.
+                                                    We designed and developed their website </p>
+                                                <h6>Tech Stack:</h6>
+                                                <ul class="d-flex flex-wrap">
+                                                    <li>
+                                                        <p>WordPress</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>WooCommerce</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Custom PHP</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Responsive CSS</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>QR Logic</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Multilingual</p>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="btn">
+                                                    <a href="#" class="primary-btn">PROJECT Detail</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="project-img">
+                                                <img src="./assets/images/projectdevice.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <div class="project-logo mb-3">
+                                                    <img src="./assets/images//pazlogo.png" alt="">
+                                                </div>
+                                                <h3>PazMentalRD is a Dominican-based platform</h3>
+                                                <p>Offering medical alert devices, ID bracelets, and emergency
+                                                    monitoring services.
+                                                    We designed and developed their website </p>
+                                                <h6>Tech Stack:</h6>
+                                                <ul class="d-flex flex-wrap">
+                                                    <li>
+                                                        <p>WordPress</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>WooCommerce</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Custom PHP</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Responsive CSS</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>QR Logic</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Multilingual</p>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="btn">
+                                                    <a href="#" class="primary-btn">PROJECT Detail</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="tab-pane fade" id="pills-g-backend" role="tabpanel"
+                                    aria-labelledby="pills-g-backend-tab">
+                                    <div class="grid-wrapper">
+                                        <div class="grid-item">
+                                            <div class="project-img">
+                                                <img src="./assets/images/projectdevice.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <div class="project-logo mb-3">
+                                                    <img src="./assets/images//pazlogo.png" alt="">
+                                                </div>
+                                                <h3>PazMentalRD is a Dominican-based platform</h3>
+                                                <p>Offering medical alert devices, ID bracelets, and emergency
+                                                    monitoring services.
+                                                    We designed and developed their website </p>
+                                                <h6>Tech Stack:</h6>
+                                                <ul class="d-flex flex-wrap">
+                                                    <li>
+                                                        <p>WordPress</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>WooCommerce</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Custom PHP</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Responsive CSS</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>QR Logic</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Multilingual</p>
+                                                    </li>
+                                                </ul>
 
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
+                                                <div class="btn">
+                                                    <a href="#" class="primary-btn">PROJECT Detail</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="project-img">
+                                                <img src="./assets/images/projectdevice.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <div class="project-logo mb-3">
+                                                    <img src="./assets/images//pazlogo.png" alt="">
+                                                </div>
+                                                <h3>PazMentalRD is a Dominican-based platform</h3>
+                                                <p>Offering medical alert devices, ID bracelets, and emergency
+                                                    monitoring services.
+                                                    We designed and developed their website </p>
+                                                <h6>Tech Stack:</h6>
+                                                <ul class="d-flex flex-wrap">
+                                                    <li>
+                                                        <p>WordPress</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>WooCommerce</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Custom PHP</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Responsive CSS</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>QR Logic</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Multilingual</p>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="btn">
+                                                    <a href="#" class="primary-btn">PROJECT Detail</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="project-img">
+                                                <img src="./assets/images/projectdevice.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <div class="project-logo mb-3">
+                                                    <img src="./assets/images//pazlogo.png" alt="">
+                                                </div>
+                                                <h3>PazMentalRD is a Dominican-based platform</h3>
+                                                <p>Offering medical alert devices, ID bracelets, and emergency
+                                                    monitoring services.
+                                                    We designed and developed their website </p>
+                                                <h6>Tech Stack:</h6>
+                                                <ul class="d-flex flex-wrap">
+                                                    <li>
+                                                        <p>WordPress</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>WooCommerce</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Custom PHP</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Responsive CSS</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>QR Logic</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Multilingual</p>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="btn">
+                                                    <a href="#" class="primary-btn">PROJECT Detail</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="project-img">
+                                                <img src="./assets/images/projectdevice.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <div class="project-logo mb-3">
+                                                    <img src="./assets/images//pazlogo.png" alt="">
+                                                </div>
+                                                <h3>PazMentalRD is a Dominican-based platform</h3>
+                                                <p>Offering medical alert devices, ID bracelets, and emergency
+                                                    monitoring services.
+                                                    We designed and developed their website </p>
+                                                <h6>Tech Stack:</h6>
+                                                <ul class="d-flex flex-wrap">
+                                                    <li>
+                                                        <p>WordPress</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>WooCommerce</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Custom PHP</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Responsive CSS</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>QR Logic</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Multilingual</p>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="btn">
+                                                    <a href="#" class="primary-btn">PROJECT Detail</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="tab-pane fade" id="pills-g-seo" role="tabpanel"
+                                    aria-labelledby="pills-g-seo-tab">
+                                    <div class="grid-wrapper">
+                                        <div class="grid-item">
+                                            <div class="project-img">
+                                                <img src="./assets/images/projectdevice.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <div class="project-logo mb-3">
+                                                    <img src="./assets/images//pazlogo.png" alt="">
+                                                </div>
+                                                <h3>PazMentalRD is a Dominican-based platform</h3>
+                                                <p>Offering medical alert devices, ID bracelets, and emergency
+                                                    monitoring services.
+                                                    We designed and developed their website </p>
+                                                <h6>Tech Stack:</h6>
+                                                <ul class="d-flex flex-wrap">
+                                                    <li>
+                                                        <p>WordPress</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>WooCommerce</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Custom PHP</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Responsive CSS</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>QR Logic</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Multilingual</p>
+                                                    </li>
+                                                </ul>
 
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
+                                                <div class="btn">
+                                                    <a href="#" class="primary-btn">PROJECT Detail</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="project-img">
+                                                <img src="./assets/images/projectdevice.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <div class="project-logo mb-3">
+                                                    <img src="./assets/images//pazlogo.png" alt="">
+                                                </div>
+                                                <h3>PazMentalRD is a Dominican-based platform</h3>
+                                                <p>Offering medical alert devices, ID bracelets, and emergency
+                                                    monitoring services.
+                                                    We designed and developed their website </p>
+                                                <h6>Tech Stack:</h6>
+                                                <ul class="d-flex flex-wrap">
+                                                    <li>
+                                                        <p>WordPress</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>WooCommerce</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Custom PHP</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Responsive CSS</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>QR Logic</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Multilingual</p>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="btn">
+                                                    <a href="#" class="primary-btn">PROJECT Detail</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="project-img">
+                                                <img src="./assets/images/projectdevice.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <div class="project-logo mb-3">
+                                                    <img src="./assets/images//pazlogo.png" alt="">
+                                                </div>
+                                                <h3>PazMentalRD is a Dominican-based platform</h3>
+                                                <p>Offering medical alert devices, ID bracelets, and emergency
+                                                    monitoring services.
+                                                    We designed and developed their website </p>
+                                                <h6>Tech Stack:</h6>
+                                                <ul class="d-flex flex-wrap">
+                                                    <li>
+                                                        <p>WordPress</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>WooCommerce</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Custom PHP</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Responsive CSS</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>QR Logic</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Multilingual</p>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="btn">
+                                                    <a href="#" class="primary-btn">PROJECT Detail</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="project-img">
+                                                <img src="./assets/images/projectdevice.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <div class="project-logo mb-3">
+                                                    <img src="./assets/images//pazlogo.png" alt="">
+                                                </div>
+                                                <h3>PazMentalRD is a Dominican-based platform</h3>
+                                                <p>Offering medical alert devices, ID bracelets, and emergency
+                                                    monitoring services.
+                                                    We designed and developed their website </p>
+                                                <h6>Tech Stack:</h6>
+                                                <ul class="d-flex flex-wrap">
+                                                    <li>
+                                                        <p>WordPress</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>WooCommerce</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Custom PHP</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Responsive CSS</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>QR Logic</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Multilingual</p>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="btn">
+                                                    <a href="#" class="primary-btn">PROJECT Detail</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="tab-pane fade" id="pills-g-branding" role="tabpanel"
+                                    aria-labelledby="pills-g-branding-tab">
+                                    <div class="grid-wrapper">
+                                        <div class="grid-item">
+                                            <div class="project-img">
+                                                <img src="./assets/images/projectdevice.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <div class="project-logo mb-3">
+                                                    <img src="./assets/images//pazlogo.png" alt="">
+                                                </div>
+                                                <h3>PazMentalRD is a Dominican-based platform</h3>
+                                                <p>Offering medical alert devices, ID bracelets, and emergency
+                                                    monitoring services.
+                                                    We designed and developed their website </p>
+                                                <h6>Tech Stack:</h6>
+                                                <ul class="d-flex flex-wrap">
+                                                    <li>
+                                                        <p>WordPress</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>WooCommerce</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Custom PHP</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Responsive CSS</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>QR Logic</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Multilingual</p>
+                                                    </li>
+                                                </ul>
 
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
+                                                <div class="btn">
+                                                    <a href="#" class="primary-btn">PROJECT Detail</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="project-img">
+                                                <img src="./assets/images/projectdevice.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <div class="project-logo mb-3">
+                                                    <img src="./assets/images//pazlogo.png" alt="">
+                                                </div>
+                                                <h3>PazMentalRD is a Dominican-based platform</h3>
+                                                <p>Offering medical alert devices, ID bracelets, and emergency
+                                                    monitoring services.
+                                                    We designed and developed their website </p>
+                                                <h6>Tech Stack:</h6>
+                                                <ul class="d-flex flex-wrap">
+                                                    <li>
+                                                        <p>WordPress</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>WooCommerce</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Custom PHP</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Responsive CSS</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>QR Logic</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Multilingual</p>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="btn">
+                                                    <a href="#" class="primary-btn">PROJECT Detail</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="project-img">
+                                                <img src="./assets/images/projectdevice.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <div class="project-logo mb-3">
+                                                    <img src="./assets/images//pazlogo.png" alt="">
+                                                </div>
+                                                <h3>PazMentalRD is a Dominican-based platform</h3>
+                                                <p>Offering medical alert devices, ID bracelets, and emergency
+                                                    monitoring services.
+                                                    We designed and developed their website </p>
+                                                <h6>Tech Stack:</h6>
+                                                <ul class="d-flex flex-wrap">
+                                                    <li>
+                                                        <p>WordPress</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>WooCommerce</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Custom PHP</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Responsive CSS</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>QR Logic</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Multilingual</p>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="btn">
+                                                    <a href="#" class="primary-btn">PROJECT Detail</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="project-img">
+                                                <img src="./assets/images/projectdevice.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <div class="project-logo mb-3">
+                                                    <img src="./assets/images//pazlogo.png" alt="">
+                                                </div>
+                                                <h3>PazMentalRD is a Dominican-based platform</h3>
+                                                <p>Offering medical alert devices, ID bracelets, and emergency
+                                                    monitoring services.
+                                                    We designed and developed their website </p>
+                                                <h6>Tech Stack:</h6>
+                                                <ul class="d-flex flex-wrap">
+                                                    <li>
+                                                        <p>WordPress</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>WooCommerce</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Custom PHP</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Responsive CSS</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>QR Logic</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Multilingual</p>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="btn">
+                                                    <a href="#" class="primary-btn">PROJECT Detail</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="tab-pane fade" id="pills-g-webdesign" role="tabpanel"
+                                    aria-labelledby="pills-g-webdesign-tab">
+                                    <div class="grid-wrapper">
+                                        <div class="grid-item">
+                                            <div class="project-img">
+                                                <img src="./assets/images/projectdevice.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <div class="project-logo mb-3">
+                                                    <img src="./assets/images//pazlogo.png" alt="">
+                                                </div>
+                                                <h3>PazMentalRD is a Dominican-based platform</h3>
+                                                <p>Offering medical alert devices, ID bracelets, and emergency
+                                                    monitoring services.
+                                                    We designed and developed their website </p>
+                                                <h6>Tech Stack:</h6>
+                                                <ul class="d-flex flex-wrap">
+                                                    <li>
+                                                        <p>WordPress</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>WooCommerce</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Custom PHP</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Responsive CSS</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>QR Logic</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Multilingual</p>
+                                                    </li>
+                                                </ul>
 
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
+                                                <div class="btn">
+                                                    <a href="#" class="primary-btn">PROJECT Detail</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="project-img">
+                                                <img src="./assets/images/projectdevice.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <div class="project-logo mb-3">
+                                                    <img src="./assets/images//pazlogo.png" alt="">
+                                                </div>
+                                                <h3>PazMentalRD is a Dominican-based platform</h3>
+                                                <p>Offering medical alert devices, ID bracelets, and emergency
+                                                    monitoring services.
+                                                    We designed and developed their website </p>
+                                                <h6>Tech Stack:</h6>
+                                                <ul class="d-flex flex-wrap">
+                                                    <li>
+                                                        <p>WordPress</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>WooCommerce</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Custom PHP</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Responsive CSS</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>QR Logic</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Multilingual</p>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="btn">
+                                                    <a href="#" class="primary-btn">PROJECT Detail</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="project-img">
+                                                <img src="./assets/images/projectdevice.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <div class="project-logo mb-3">
+                                                    <img src="./assets/images//pazlogo.png" alt="">
+                                                </div>
+                                                <h3>PazMentalRD is a Dominican-based platform</h3>
+                                                <p>Offering medical alert devices, ID bracelets, and emergency
+                                                    monitoring services.
+                                                    We designed and developed their website </p>
+                                                <h6>Tech Stack:</h6>
+                                                <ul class="d-flex flex-wrap">
+                                                    <li>
+                                                        <p>WordPress</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>WooCommerce</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Custom PHP</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Responsive CSS</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>QR Logic</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Multilingual</p>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="btn">
+                                                    <a href="#" class="primary-btn">PROJECT Detail</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="project-img">
+                                                <img src="./assets/images/projectdevice.png" alt="">
+                                            </div>
+                                            <div class="project-content">
+                                                <div class="project-logo mb-3">
+                                                    <img src="./assets/images//pazlogo.png" alt="">
+                                                </div>
+                                                <h3>PazMentalRD is a Dominican-based platform</h3>
+                                                <p>Offering medical alert devices, ID bracelets, and emergency
+                                                    monitoring services.
+                                                    We designed and developed their website </p>
+                                                <h6>Tech Stack:</h6>
+                                                <ul class="d-flex flex-wrap">
+                                                    <li>
+                                                        <p>WordPress</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>WooCommerce</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Custom PHP</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Responsive CSS</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>QR Logic</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Multilingual</p>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="btn">
+                                                    <a href="#" class="primary-btn">PROJECT Detail</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
-                                    </div>
-                                </div>
                             </div>
-
                         </div>
+
                     </div>
-                    <div class="tab-pane fade" id="pills-seo" role="tabpanel" aria-labelledby="pills-seo-tab">
-                        <div class="row gy-5">
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-branding" role="tabpanel" aria-labelledby="pills-branding-tab">
-                        <div class="row gy-5">
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-webdesign" role="tabpanel"
-                        aria-labelledby="pills-webdesign-tab">
-                        <div class="row gy-5">
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-4">
-                                <div class="project-card">
-                                    <div class="project-image">
-                                        <img src="./assets/images/Container.png" alt="">
-                                    </div>
-                                    <div class="project-content">
-                                        <h6>SEO & Performance</h6>
-                                        <h3>Optimizing Website Performance for Better SEO</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
                 </div>
-
-
-
-                <!-- <div class="row g-4">
-                    <div class="col-12 col-lg-4">
-                        <div class="project-card">
-                            <div class="project-image">
-                                <img src="./assets/images/project1.png" alt="">
-                            </div>
-                            <div class="project-content">
-                                <h3>Project Title 1</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat
-                                    venenatis, facilisis est a, aliquet ligula.</p>
-                                <a href="#" class="primary-btn">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="project-card">
-                            <div class="project-image">
-                                <img src="./assets/images/project2.png" alt="">
-                            </div>
-                            <div class="project-content">
-                                <h3>Project Title 2</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat
-                                    venenatis, facilisis est a, aliquet ligula.</p>
-                                <a href="#" class="primary-btn">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="project-card">
-                            <div class="project-image">
-                                <img src="./assets/images/project3.png" alt="">
-                            </div>
-                            <div class="project-content">
-                                <h3>Project Title 3</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat
-                                    venenatis, facilisis est a, aliquet ligula.</p>
-                                <a href="#" class="primary-btn">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+                <!-- layout shift tabs -->
             </div>
         </div>
     </section>
