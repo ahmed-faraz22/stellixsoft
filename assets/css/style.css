@@ -2592,6 +2592,8 @@ footer {
             justify-content: center;
             gap: 16px;
             margin: 46px 0;
+            max-width: 70%;
+            justify-self: center;
 
             @media(max-width: 1200.99px) {
                 margin: 46px 0 80px 0;
@@ -2612,7 +2614,6 @@ footer {
 
                 @media(max-width: 576px) {
                     font-size: 12px;
-
                 }
 
             }
@@ -2631,14 +2632,8 @@ footer {
 
 
             @media(max-width: 1200.99px) {
-                top: 148px;
-                right: 50%;
-                transform: translate(50%, 5%);
+                position: static;
                 margin: 0 !important;
-            }
-
-            @media(max-width: 767.99px) {
-                top: 185px;
             }
 
             #pills-row-tab {
@@ -2649,7 +2644,7 @@ footer {
                 }
 
                 @media(max-width: 420.99px) {
-                    padding: 0;
+                    padding: 10px;
                 }
             }
 
@@ -2661,7 +2656,7 @@ footer {
                 }
 
                 @media(max-width: 420.99px) {
-                    padding: 0;
+                    padding: 10px;
                 }
             }
 
@@ -2678,13 +2673,16 @@ footer {
             background: var(--secondary-color);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
             border-radius: 8px 8px 60px 8px;
-
+            height: 100%;
+            display: flex;
+            flex-direction: column;
 
             .project-image {
-                /* margin-bottom: 32px; */
+                height: 250px;
 
                 img {
                     width: 100%;
+                    height: 100%;
                     object-fit: cover;
                     object-position: center;
                 }
@@ -2693,6 +2691,10 @@ footer {
 
             .project-content {
                 padding: 32px 17px;
+                display: flex;
+                flex-flow: column;
+                height: 100%;
+                justify-content: space-between;
 
                 h6 {
                     font-size: var(--font-size-xsmall);
@@ -2731,7 +2733,7 @@ footer {
 
                 .project-img {
                     img {
-                        filter: drop-shadow(17px 18px 6px rgba(0,0,0, 0.6));
+                        filter: drop-shadow(17px 18px 6px rgba(0, 0, 0, 0.6));
                     }
                 }
 
@@ -2751,7 +2753,7 @@ footer {
 
                 .project-img {
                     img {
-                        filter: drop-shadow(-17px 18px 6px rgba(0,0,0, 0.6));
+                        filter: drop-shadow(-17px 18px 6px rgba(0, 0, 0, 0.6));
                     }
                 }
 
