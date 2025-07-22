@@ -212,30 +212,23 @@ document.addEventListener('DOMContentLoaded', function () {
 // Selecting the images
 document.addEventListener("DOMContentLoaded", function () {
     // Selecting both images
-    const images = document.querySelectorAll('.clickable-image');
-
-    // Initialize the first image to be active and the second one to be inactive
+    const images = document.querySelectorAll('.hoverable-image');
     const firstCard = images[0].closest('.why-us-card');
     const secondCard = images[1].closest('.why-us-card');
 
+    // Initialize the first image to be inactive and the second one to be active
     firstCard.classList.add('inactive');
     secondCard.classList.add('active');
 
-    // Adding event listeners for image click
+    // Adding event listeners for hover
     images.forEach((image) => {
-        image.addEventListener('click', function () {
+        image.addEventListener('mouseenter', function () {
             const parentCard = image.closest('.why-us-card');
 
-            // Toggle the classes on the clicked image
-            if (parentCard.classList.contains('inactive')) {
-                parentCard.classList.remove('inactive');
-                parentCard.classList.add('active');
-            } else {
-                parentCard.classList.remove('active');
-                parentCard.classList.add('inactive');
-            }
+            // Make the hovered card active and the other inactive
+            parentCard.classList.remove('inactive');
+            parentCard.classList.add('active');
 
-            // Ensure the other card gets the opposite class
             images.forEach((img) => {
                 const otherCard = img.closest('.why-us-card');
                 if (otherCard !== parentCard) {
