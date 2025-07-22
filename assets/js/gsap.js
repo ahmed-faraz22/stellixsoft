@@ -32,26 +32,26 @@ tl.to(card1, {
     }, 0);
 
 
-const heroTl = gsap.timeline();
+const heroTl = gsap.timeline({
+    defaults: { ease: "power3.out" } // Set default easing for all animations
+});
 
 heroTl
     .from(".logo, .desktop-nav, .header-cta", {
         y: -100,
         opacity: 0,
-        duration: 1,
-        ease: "power3.out",
-        stagger: 0.2,
+        duration: 1, // Reduced from 1.5s for faster load
     })
-    .from(".hero h1 , .hero p", {
+    .from(".hero h1, .hero p", {
         opacity: 0,
-        x: -400,
-        stagger: 0.4,
-        duration: 0.5,
+        x: -100, // Reduced from -400px for less extreme movement
+        stagger: 0.2, // Reduced from 0.4s
+        duration: 0.6, // Reduced from 1s
         ease: "power2.out"
     })
-    .from(".hero-btn .button-wrap , .hero .secondary-btn ", {
-        scale: 0.3,
+    .from(".hero-btn .button-wrap, .hero .secondary-btn", {
+        scale: 0.8, // Changed from 0.3 for less extreme scaling
         opacity: 0,
-        stagger: 0.2,
-        duration: 1,
+        stagger: 0.1, // Reduced from 0.2s
+        duration: 0.7, // Reduced from 0.5s
     });
