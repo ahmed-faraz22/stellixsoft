@@ -2732,6 +2732,7 @@ footer {
                 }
 
                 .project-img {
+
                     img {
                         filter: drop-shadow(17px 18px 6px rgba(0, 0, 0, 0.6));
                     }
@@ -2752,7 +2753,10 @@ footer {
                 }
 
                 .project-img {
+                    height: 300px;
+
                     img {
+                        height: 100%;
                         filter: drop-shadow(-17px 18px 6px rgba(0, 0, 0, 0.6));
                     }
                 }
@@ -2762,6 +2766,16 @@ footer {
                     background: #F4F4F6;
                     padding: 16px 23px;
                     border-radius: 14px;
+
+                    .project-logo {
+                        height: 48px;
+
+                        img {
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
 
                     h3 {
                         font-size: var(--font-size-base);
