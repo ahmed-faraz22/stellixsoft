@@ -3521,7 +3521,10 @@ footer {
 
 /* ### pricing details ### */
 
-.expertise {
+
+/* expertise  */
+
+/* .expertise {
     .inner {
         padding: 80px 0;
 
@@ -3551,28 +3554,108 @@ footer {
         }
 
     }
+} */
+/* expertise  */
+
+
+/* about-pricing  */
+.about-pricing {
+    padding: 80px 0 150px 0;
+
+    .inner {
+
+        .why-us-card {
+            /* max-width: 50%; */
+            /* width: 100%; */
+            height: 451px;
+            margin: 0 auto;
+            transition: all .5s ease;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 8px 8px 60px 8px;
+            }
+        }
+
+        .col-md-6:first-child .why-us-card {
+            max-width: 50%;
+
+            img {
+                border-radius: 8px;
+            }
+
+            @media(max-width: 786px) {
+                max-width: 100%;
+            }
+
+        }
+
+        .content-wrapper {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .key-point {
+                display: flex;
+                gap: 14px;
+
+                .head {
+                    width: 23px;
+                }
+
+                .body {
+                    flex: 1 1 0%;
+
+                    h3 {
+                        font-size: var(--font-size-base);
+                        font-weight: var(--font-weight-bold);
+                    }
+                }
+            }
+        }
+
+    }
 }
+
+/* about-pricing  */
 
 
 /* pricing-plan */
 .pricing-plan {
-    padding: 100px 0;
+    padding: 100px 0 31px 0;
     background: #081426;
     position: relative;
 
     .inner {
 
-        .wp-img {
+        .price-tag {
             position: absolute;
-            top: -25%;
+            top: -15%;
             right: 10%;
             z-index: 10;
+            background: url(../images/pricetag.png) no-repeat center center/cover;
+            height: 247px;
+            width: 247px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: center;
+            h3 {
+                font-weight: var(--font-weight-bold);
+
+                span {
+                    display: block;
+                    color: var(--secondary-color);
+                    font-size: 60px;
+                }
+            }
+
+            @media(max-width: 1200.99px) {
+                top: -155px;
             }
 
             @media(max-width: 992.99px) {
@@ -3687,72 +3770,270 @@ footer {
             }
 
         }
+
+        .banner {
+            background: url(../images/bannerbg.png) no-repeat center center/cover;
+
+            h2 {
+                color: var(--secondary-color);
+                font-size: 60px;
+
+                @media(max-width: 992.99px) {
+                    font-size: var(--font-size-xl);
+                }
+            }
+
+            .schedule-cta {
+                display: flex;
+                justify-content: center;
+
+                .primary-btn {
+                    border: 1px solid var(--secondary-color);
+                    padding: 7px 25px;
+                    font-size: var(--font-size-base);
+                }
+            }
+
+        }
     }
 }
 
 /* pricing-plan */
 
-/* about-pricing  */
-.about-pricing {
-    padding: 80px 0 150px 0;
-
+/* cost-components  */
+.cost-components {
     .inner {
+        padding: 80px 0;
 
-        .why-us-card {
-            /* max-width: 50%; */
-            /* width: 100%; */
-            height: 451px;
-            margin: 0 auto;
-            transition: all .5s ease;
-
-            img {
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                object-position: center;
-                border-radius: 8px 8px 60px 8px;
-            }
-        }
-
-        .col-md-6:first-child .why-us-card {
+        h2 {
             max-width: 50%;
+            margin: 0 auto;
 
-            img {
-                border-radius: 8px;
+            @media(max-width: 1200.99px) {
+                max-width: 80%;
             }
 
-            @media(max-width: 786px) {
+            @media(max-width: 992.99px) {
                 max-width: 100%;
             }
-
         }
 
-        .content-wrapper {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+        h3 {
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-bold);
 
-            .key-point {
-                display: flex;
-                gap: 14px;
+            @media(max-width: 576.99px) {
+                font-size: var(--font-size-large);
+            }
+        }
 
-                .head {
-                    width: 23px;
+        .components-wrapper {
+            .component {
+                max-width: 55%;
+                width: 100%;
+                margin: 0 auto;
+
+                @media(max-width: 1200.99px) {
+                    max-width: 80%;
                 }
 
-                .body {
-                    flex: 1 1 0%;
+                @media(max-width: 992.99px) {
+                    max-width: 100%;
+                }
 
-                    h3 {
+                .tittle {
+                    display: flex;
+                    align-items: center;
+                    gap: 17px;
+
+                    .index {
+                        position: relative;
+                        background: var(--tertiary-color);
                         font-size: var(--font-size-base);
                         font-weight: var(--font-weight-bold);
+                        color: var(--secondary-color);
+                        height: 57px;
+                        width: 57px;
+                        border: 4px solid var(--secondary-color);
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        outline: 2px solid rgba(84, 107, 255, 0.37);
+
+                        @media(max-width: 576.99px) {
+                            height: 45px;
+                            width: 45px;
+                        }
+
+                        @media(max-width: 486.99px) {
+                            display: none;
+                        }
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 55px;
+                            left: 50%;
+                            width: 2px;
+                            height: 335px;
+                            background: rgba(84, 107, 255, 0.37);
+
+                            @media(max-width: 1200.99px) {
+                                height: 260px;
+
+                            }
+
+                            @media(max-width: 992.99px) {
+                                height: 270px;
+                            }
+
+                            @media(max-width: 768.99px) {
+                                height: 290px;
+                            }
+
+                            @media(max-width: 576.99px) {
+                                display: none;
+                            }
+
+                        }
+                    }
+                }
+
+                .component-list {
+                    font-size: 20px;
+                    padding-left: 73px;
+
+                    @media(max-width: 486.99px) {
+                        padding-left: 0;
+
+                    }
+
+                    li {
+                        font-size: var(--font-size-small);
+                        margin-bottom: 10px;
+
+                        @media(max-width: 576.99px) {
+                            font-size: var(--font-size-base);
+                        }
+                    }
+
+                    .sub-list {
+
+                        li::marker {
+                            content: "•";
+                            color: var(--primary-color);
+                        }
+
+                        p {
+                            margin-left: 20px;
+                            font-size: var(--font-size-xsmall);
+                            margin-top: 10px;
+
+
+                            @media(max-width: 576.99px) {
+                                font-size: var(--font-size-small);
+                            }
+                        }
+
+                        @media(max-width: 576.99px) {
+                            padding: 12px;
+                        }
+                    }
+                }
+
+
+            }
+
+            .component:last-child .index::before {
+                display: none;
+            }
+        }
+    }
+}
+
+/* cost-components  */
+
+/* meeting-banner  */
+
+.meeting-banner {
+    background: url(../images/bannerbg.png) no-repeat center center/cover;
+
+    .inner {
+        padding: 30px 0;
+
+        .banner {
+
+            h2 {
+                color: var(--secondary-color);
+                font-size: 60px;
+
+                @media(max-width: 992.99px) {
+                    font-size: var(--font-size-xl);
+                }
+            }
+
+            .schedule-cta {
+                display: flex;
+                justify-content: center;
+
+                .primary-btn {
+                    border: 1px solid var(--secondary-color);
+                    padding: 7px 25px;
+                    font-size: var(--font-size-base);
+                }
+            }
+
+        }
+    }
+
+}
+
+/* meeting-banner  */
+
+/* estimation-process  */
+
+.estimation-process {
+    padding: 80px 0;
+
+    .inner {
+        .process-wrapper {
+            display: flex;
+            align-items: center;
+            column-gap: 144px;
+            flex-wrap: wrap;
+            row-gap: 112px;
+
+            .process-card {
+                width: calc(33.33% - 96px);
+
+                .c-image {
+                    height: 259px;
+                    margin-bottom: 26px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        object-position: center;
+                    }
+                }
+
+                .c-description {
+                    p {
+                        text-align: center;
+                        font-size: var(--font-size-base);
+                        font-weight: var(--font-weight-bold);
+                        color: var(--tertiary-color);
+                        max-width: 75%;
+                        margin: 0 auto;
                     }
                 }
             }
         }
-
     }
 }
+
+/* estimation-process  */
 
 /* ### pricing details ### */
